@@ -1,6 +1,12 @@
 # Geometry-Projects
 This repository contains a set of core algorithms used in many of my projects: working with vectors and matrices, least squares algorithms and parallel algorithms.
 
+  - [ ] Meshes-Processing
+  - [ ] Ellipse-Reconstruction
+  - [ ] Segment-Reconstruction
+  - [ ] Inertial-Axes-of-Solid
+  - [ ] Girdle-Finding
+  - [ ] Bruter-Constructing
   - [ ] Preliminary-algorithms
       - [ ] Vector-Class
       - [ ] Least-Square-Line
@@ -15,9 +21,3 @@ This repository contains a set of core algorithms used in many of my projects: w
           - [ ] Integral-evaluation-pipe
           - [ ] Integral-evaluation-threads
       - [ ] Convex-Hull
-  - [ ] Meshes-Processing
-  - [ ] Ellipse-Reconstruction
-  - [ ] Segment-Reconstruction
-  - [ ] Inertial-Axes-of-Solid
-  - [ ] Girdle-Finding
-  - [ ] Bruter-Constructing
