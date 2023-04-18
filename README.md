@@ -9,8 +9,8 @@ This repository contains projects related with computational geometry that have 
   - [ ] Bruter Constructing
   - [ ] Preliminary algorithms
       - [ ] Vector Class
-      - [ ] Least Square Line
-      - [ ] Least Square Plane
+      - [ ] Least Square Line Fitting
+      - [ ] Least Square Plane Fitting
       - [ ] Matrix Algorithms
           - [ ] Matrix operations
           - [ ] Matrix eigenvalues
