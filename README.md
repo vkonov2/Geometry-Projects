@@ -7,4 +7,4 @@ This repository contains projects related with computational geometry that have 
   - [ ] Inertial Axes of Solid
   - [ ] Girdle Recognition
   - [ ] Bruter Programming
-  - [ ] Preliminary algorithms
+  - [ ] Preliminary Algorithms
