@@ -1,5 +1,5 @@
 # Geometry-Projects
-This repository contains projects that have been implemented during study and work.
+This repository contains projects related with computational geometry that have been done during study and work.
 
   - [ ] Meshes-Processing
   - [ ] Ellipse-Reconstruction
