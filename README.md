@@ -6,7 +6,7 @@ This repository contains projects related with computational geometry that have 
   - [ ] Segment Reconstruction
   - [ ] Inertial Axes of Solid
   - [ ] Girdle Recognition
-  - [ ] Bruter Constructing
+  - [ ] Bruter Programming
   - [ ] Preliminary algorithms
       - [ ] Vector Class
       - [ ] Least Square Line Fitting
