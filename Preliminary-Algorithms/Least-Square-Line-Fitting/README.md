@@ -218,7 +218,7 @@ $$(A - \lambda E)\cdot \begin{pmatrix}
 	a_{yz}  & -b_{xy} & -b_{xz} \\
 	-b_{xy} & a_{xz} & -b_{yz} \\
 	-b_{xz} & -b_{yz} & a_{xy}
-\end{pmatrix}, \; E = \begin{pmatrix}
+\end{pmatrix}, E = \begin{pmatrix}
 	1 & 0 & 0 \\
 	0 & 1 & 0 \\
 	0 & 0 & 1
