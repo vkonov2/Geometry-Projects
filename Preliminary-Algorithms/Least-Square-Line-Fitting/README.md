@@ -43,11 +43,18 @@ $$\begin{cases}
 		\frac{\partial}{\partial b} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0 \\
 		\frac{\partial}{\partial d} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0 \\
 		\frac{\partial}{\partial \lambda} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0
-	\end{cases}
-	\begin{cases}
-		\underset{i=1}{\overset{n}{\sum}}x_i(ax_i+by_i+d) - \lambda a = 0 \\
-		\underset{i=1}{\overset{n}{\sum}}y_i(ax_i+by_i+d) - \lambda b = 0 \\
-		\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d) = 0 \\
-		a^2+b^2 = 1
 	\end{cases}$$
 
+Таким образом, задача свелась к поиску собственных значений матрицы $A$:
+
+$$A = \begin{pmatrix}
+		\underset{i=1}{\overset{n}{\sum}}x_i^2-\frac{1}{n}\underset{i=1}{(\overset{n}{\sum}} x_i)^2
+		& 
+		\underset{i=1}{\overset{n}{\sum}}x_i y_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}x_i \underset{i=1}{\overset{n}{\sum}} y_i
+		\\
+		\underset{i=1}{\overset{n}{\sum}}x_i y_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}x_i \underset{i=1}{\overset{n}{\sum}} y_i
+		&
+		\underset{i=1}{\overset{n}{\sum}}y_i^2-\frac{1}{n}\underset{i=1}{(\overset{n}{\sum}} y_i)^2
+	\end{pmatrix}$$
+
+Тем или иным способом, найдем собственные значения. В программе удобно пользоваться методом Якоби.
