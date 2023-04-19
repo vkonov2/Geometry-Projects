@@ -109,27 +109,19 @@ $x_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} x_i, \; y_0 = \frac{1}{n}\un
 
 По определению расстояние от точки $M_1$ до прямой $\mathit{l}$ определяется по следующей формуле:
 
-$M_0 (x_0, y_0, z_0)$ - точка на прямой $\mathit{l}$
+$M_0 (x_0, y_0, z_0)$ - точка на прямой $\mathit{l}$, $\mathit{l} = (m, n, p)$ - напрявляющий вектор прямой, $d (M_1, \mathit{l}) = \frac{|[\overline{\mathit{l}}, \overline{M_0 M_1}]|}{|\overline{\mathit{l}}|}$
 
-$\mathit{l} = (m, n, p)$ - напрявляющий вектор прямой
-
-$d (M_1, \mathit{l}) = \frac{|[\overline{\mathit{l}}, \overline{M_0 M_1}]|}{|\overline{\mathit{l}}|}$
-
-<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/4.jpg" alt="c" width="260" height="260"/>
+<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/4.jpg" alt="c" width="460" height="260"/>
 
 Распишем составляющие элементы формулы для расстояния:
 
-$|\overline{l}| = \sqrt{m^2 + n^2 + p^2}$
+$|\overline{l}| = \sqrt{m^2 + n^2 + p^2}, \overline{M_0 M_1} = (x_1 - x_0, y_1 - y_0, z_1 - z_0)$
 
-$\overline{M_0 M_1} = (x_1 - x_0, y_1 - y_0, z_1 - z_0)$
-
-$$[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
+$[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
 	\mathbf{i} & \mathbf{j} & \mathbf{k} \\
 	m & n & p \\
 	x_1 - x_0 & y_1 - y_0 & z_1 - z_0
-\end{vmatrix} = $$
-
-$$=\left(\begin{vmatrix}
+\end{vmatrix} = \left(\begin{vmatrix}
 	n & p \\
 	y_1 - y_0 & z_1 - z_0
 \end{vmatrix}, -\begin{vmatrix}
@@ -138,7 +130,7 @@ $$=\left(\begin{vmatrix}
 \end{vmatrix}, \begin{vmatrix}
 	m & n \\
 	x_1 - x_0 & y_1 - y_0
-\end{vmatrix}\right) = $$
+\end{vmatrix}\right) = $
 
 $$= (n (z_1 - z_0) - p (y_1 - y_0), p (x_1 - x_0) - m (z_1 - z_0), m (y_1 - y_0) - n (x_1 - x_0)) = $$
 
