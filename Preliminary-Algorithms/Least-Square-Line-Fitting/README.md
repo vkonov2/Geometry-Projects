@@ -266,3 +266,13 @@ $$\begin{cases}
 	(x_0, y_0, z_0)\text{ - центр масс системы:} \\
 	x_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} x_i, \; y_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} y_i, \; z_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} z_i
 \end{cases}$$
+
+<h2 align="left">Примеры работы</h2>
+
+<h3 align="left">Двумерный случай</h3>
+
+<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/5.jpg" alt="c" width="260" height="260"/> <img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/6.jpg" alt="c" width="260" height="260"/>
+
+<h3 align="left">Трехмерный случай</h3>
+
+<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/7.jpg" alt="c" width="260" height="260"/> <img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/8.jpg" alt="c" width="260" height="260"/>
