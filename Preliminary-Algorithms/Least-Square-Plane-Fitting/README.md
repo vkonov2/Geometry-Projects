@@ -61,15 +61,7 @@ $$\begin{pmatrix}
 	a \\ b \\ c
 \end{pmatrix} = 0 \Leftrightarrow (A - \lambda E)\cdot \begin{pmatrix}
 	a \\ b \\ c
-\end{pmatrix} = 0,\text{ где } A = \begin{pmatrix}
-	A_{11} & A_{12} & A_{13} \\
-	A_{12} & A_{22} & A_{23} \\
-	A_{13} & A_{23} & A_{33}
-\end{pmatrix}, E = \begin{pmatrix}
-	1 & 0 & 0 \\
-	0 & 1 & 0 \\
-	0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix} = 0$$
 
 Тогда задача свелась к поиску собственных значений для матрицы $A$. Тем или иным способом (например, методом Якоби) находим три собственных значения: $\lambda_i, i=1,2,3$.
 
