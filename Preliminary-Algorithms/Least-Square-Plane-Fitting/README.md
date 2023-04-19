@@ -42,7 +42,7 @@ $$\begin{cases}
 		\frac{\partial}{\partial \lambda} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0
 	\end{cases}$$
 
-Введем следующие обозначения:
+<!-- Введем следующие обозначения: -->
 $$\begin{cases}
 	A_{11} = \underset{i=1}{\overset{n}{\sum}}x_i^2-\frac{1}{n} \left(\underset{i=1}{\overset{n}{\sum}}x_i\right)^2 \\
 	A_{12} = A_{21} = \underset{i=1}{\overset{n}{\sum}}x_i y_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}x_i \underset{i=1}{\overset{n}{\sum}}y_i \\
@@ -52,7 +52,7 @@ $$\begin{cases}
 	A_{33} = \underset{i=1}{\overset{n}{\sum}}z_i^2-\frac{1}{n} \left(\underset{i=1}{\overset{n}{\sum}}z_i\right)^2
 \end{cases}$$
 
-Решение первых трех уравнений эквивалентно решению матричного уравнения:
+<!-- Решение первых трех уравнений эквивалентно решению матричного уравнения:
 $$\begin{pmatrix}
 	A_{11} - \lambda & A_{12} & A_{13} \\
 	A_{12} & A_{22}-\lambda & A_{23} \\
@@ -94,3 +94,4 @@ $$L_i(a_i, b_i, c_i, d_i) = \underset{j=1}{\overset{n}{\sum}}(a_ix_j+b_iy_j+c_iz
 Выбираем $L = min \{L_1, L_2, L_3\}$. Без ограничения общности пусть $L_1 < L_2, \; L_1 < L_3 \Rightarrow a = a_1, b = b_1, c = c_1, d = d_1$.
 
 Таким образом, мы однозначно нашли плоскость, которая аппроксимирует заданное множество точек в пространстве наилучшим образом.
+ -->
