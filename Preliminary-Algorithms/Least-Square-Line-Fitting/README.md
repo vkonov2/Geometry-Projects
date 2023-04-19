@@ -43,4 +43,11 @@ $$\begin{cases}
 		\frac{\partial}{\partial b} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0 \\
 		\frac{\partial}{\partial d} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0 \\
 		\frac{\partial}{\partial \lambda} (\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d)^2 - \lambda (a^2+b^2-1)) = 0
+	\end{cases}
+	\begin{cases}
+		\underset{i=1}{\overset{n}{\sum}}x_i(ax_i+by_i+d) - \lambda a = 0 \\
+		\underset{i=1}{\overset{n}{\sum}}y_i(ax_i+by_i+d) - \lambda b = 0 \\
+		\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+d) = 0 \\
+		a^2+b^2 = 1
 	\end{cases}$$
+
