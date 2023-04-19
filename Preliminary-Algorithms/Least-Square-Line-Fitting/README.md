@@ -98,12 +98,11 @@ $$a = -\frac{A_{1,2}}{A_{1,1}-\lambda_1}, \; b =1, \; d = -\frac{1}{n}(a * \unde
 
 Будем искать прямую в параметрическом виде. Пусть $(m, n, p)$ - напрявляющий вектор прямой, $(x_0, y_0, z_0)$ - некоторая точка прямой. Тогда следующая система задает прямую в пространстве: 
 
-$$\mathit{l}:  \begin{cases}
+$$\begin{cases}
 		x = x_0 + m \cdot t \\
 		y = y_0 + n \cdot t \\
 		z = z_0 + p \cdot t
 	\end{cases}$$
-, где $t \in \mathbb{R}$ - параметр.
 
 В качестве точки $(x_0, y_0, z_0)$ выбирем центр масс системы данных точек. Таким образом:
 $x_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} x_i, \; y_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} y_i, \; z_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} z_i$.
@@ -112,7 +111,7 @@ $x_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} x_i, \; y_0 = \frac{1}{n}\un
 
 $M_0 (x_0, y_0, z_0)$ - точка на прямой $\mathit{l}$, $\mathit{l} = (m, n, p)$ - напрявляющий вектор прямой, $d (M_1, \mathit{l}) = \frac{|[\overline{\mathit{l}}, \overline{M_0 M_1}]|}{|\overline{\mathit{l}}|}$
 
-<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/4.jpg" alt="c" width="460" height="260"/>
+<img src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/4.jpg" alt="c" width="460" height="200"/>
 
 Распишем составляющие элементы формулы для расстояния:
 
