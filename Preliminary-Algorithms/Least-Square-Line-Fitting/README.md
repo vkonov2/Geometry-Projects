@@ -269,10 +269,4 @@ $$\begin{cases}
 
 <h2 align="left">Примеры работы</h2>
 
-<h3 align="left">Двумерный случай</h3>
-
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/6.jpg" alt="c" width="360" height="360"/>
-
-<h3 align="left">Трехмерный случай</h3>
-
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/8.jpg" alt="c" width="360" height="360"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/6.jpg" alt="c" width="360" height="360"/> <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/8.jpg" alt="c" width="360" height="360"/>
