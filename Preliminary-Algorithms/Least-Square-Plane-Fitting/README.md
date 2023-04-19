@@ -34,8 +34,7 @@ $$L(a, b, c, d, \lambda) = \underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2
 
 Составим систему из пяти уравнений стационарности, приравняв к нулю частные производные функции Лагранжа $L(a, b, c, d, \lambda)$ по $a, b, c, d$ и $\lambda$:
 
-$$\begin{gathered}
-	\begin{cases}
+$$\begin{cases}
 		\frac{\partial}{\partial a} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0 \\
 		\frac{\partial}{\partial b} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0 \\
 		\frac{\partial}{\partial c} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0 \\
