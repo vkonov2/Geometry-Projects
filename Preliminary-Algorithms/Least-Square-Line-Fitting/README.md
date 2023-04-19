@@ -115,9 +115,11 @@ $M_0 (x_0, y_0, z_0)$ - точка на прямой $\mathit{l}$, $\mathit{l} =
 
 Распишем составляющие элементы формулы для расстояния:
 
-$|\overline{l}| = \sqrt{m^2 + n^2 + p^2}, \overline{M_0 M_1} = (x_1 - x_0, y_1 - y_0, z_1 - z_0)$
+$|\overline{l}| = \sqrt{m^2 + n^2 + p^2}$
 
-$[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
+$\overline{M_0 M_1} = (x_1 - x_0, y_1 - y_0, z_1 - z_0)$
+
+$$[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
 	\mathbf{i} & \mathbf{j} & \mathbf{k} \\
 	m & n & p \\
 	x_1 - x_0 & y_1 - y_0 & z_1 - z_0
@@ -130,9 +132,7 @@ $[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
 \end{vmatrix}, \begin{vmatrix}
 	m & n \\
 	x_1 - x_0 & y_1 - y_0
-\end{vmatrix}\right) = $
-
-$$= (n (z_1 - z_0) - p (y_1 - y_0), p (x_1 - x_0) - m (z_1 - z_0), m (y_1 - y_0) - n (x_1 - x_0)) = $$
+\end{vmatrix}\right) = (n (z_1 - z_0) - p (y_1 - y_0), p (x_1 - x_0) - m (z_1 - z_0), m (y_1 - y_0) - n (x_1 - x_0)) = $$
 
 $$ = (n \triangle_{z_1} - p \triangle_{y_1}, p \triangle_{x_1} - m \triangle_{z_1}, m \triangle_{y_1} - n \triangle_{x_1})\text{, где }\begin{cases}
 	\triangle_{x_1} = x_1 - x_0 \\
