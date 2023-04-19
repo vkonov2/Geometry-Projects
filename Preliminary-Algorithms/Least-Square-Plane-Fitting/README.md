@@ -14,7 +14,7 @@
 
 $$d (M_0, \mathit{\pi}) = \frac{| a x_0 + b y_0 + c z_0 + d |}{\sqrt{a^2 + b^2 + c^2}}$$
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/33f547e8fe151cf23d36005db11a27432d161b44/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/2.jpg" alt="c" width="400" height="250"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/33f547e8fe151cf23d36005db11a27432d161b44/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/2.jpg" alt="c" width="400" height="150"/>
 
 Будем искать нормированное уравнение плоскости, которое получается из общего уравнения делением всех членов на $\sqrt{a^2+b^2+с,2}$: $a'x+b'y+с'+d'=0$. Тогда расстояние от точки $M_0 = (x_0,y_0, z_0)$ до плоскости равно абсолютному значению подстановки точки в уравнение плоскости и вычисляется по формуле:
 
