@@ -12,4 +12,4 @@ This repository contains projects related with preliminary algorithms that have 
       - [ ] Integral evaluation
       - [ ] Integral evaluation (pipe)
       - [ ] Integral evaluation (threads)
-  - [ ] Convex Hull
+  - [ ] <a href="https://github.com/vkonov2/Geometry-Projects/tree/main/Preliminary-Algorithms/Convex-Hull" target="_blank" rel="noreferrer"> Convex Hull
