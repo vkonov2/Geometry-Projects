@@ -30,7 +30,7 @@ $$\Lambda (\pi,P)=\sqrt{\underset{i=1}{\overset{n}{\sum}} (a'x_i+b'y_i+c'z_i+d')
 
 Будем искать коэффициенты методом Лагранжа. Составим функцию Лагранжа:
 
-$$L(a, b, c, d, \lambda) = \underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)$$.
+$$L(a, b, c, d, \lambda) = \underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)$$
 
 Составим систему из пяти уравнений стационарности, приравняв к нулю частные производные функции Лагранжа $L(a, b, c, d, \lambda)$ по $a, b, c, d$ и $\lambda$:
 
@@ -41,3 +41,56 @@ $$\begin{cases}
 		\frac{\partial}{\partial d} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0 \\
 		\frac{\partial}{\partial \lambda} \left(\underset{i=1}{\overset{n}{\sum}}(ax_i+by_i+cz_i+d)^2 - \lambda (a^2+b^2+c^2-1)\right) = 0
 	\end{cases}$$
+
+Введем следующие обозначения:
+$$\begin{cases}
+	A_{11} = \underset{i=1}{\overset{n}{\sum}}x_i^2-\frac{1}{n} \left(\underset{i=1}{\overset{n}{\sum}}x_i\right)^2 \\
+	A_{12} = A_{21} = \underset{i=1}{\overset{n}{\sum}}x_i y_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}x_i \underset{i=1}{\overset{n}{\sum}}y_i \\
+	A_{13} = A_{31} = \underset{i=1}{\overset{n}{\sum}}x_iz_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}x_i \underset{i=1}{\overset{n}{\sum}}z_i \\
+	A_{22} = \underset{i=1}{\overset{n}{\sum}}y_i^2-\frac{1}{n} \left(\underset{i=1}{\overset{n}{\sum}}y_i\right)^2 \\
+	A_{23} = A_{32} = \underset{i=1}{\overset{n}{\sum}}y_iz_i - \frac{1}{n}\underset{i=1}{\overset{n}{\sum}}y_i \underset{i=1}{\overset{n}{\sum}}z_i \\
+	A_{33} = \underset{i=1}{\overset{n}{\sum}}z_i^2-\frac{1}{n} \left(\underset{i=1}{\overset{n}{\sum}}z_i\right)^2
+\end{cases}$$
+
+Решение первых трех уравнений эквивалентно решению матричного уравнения:
+$$\begin{pmatrix}
+	A_{11} - \lambda & A_{12} & A_{13} \\
+	A_{12} & A_{22}-\lambda & A_{23} \\
+	A_{13} & A_{23} & A_{33} - \lambda
+\end{pmatrix}\cdot \begin{pmatrix}
+	a \\ b \\ c
+\end{pmatrix} = 0 \Leftrightarrow (A - \lambda E)\cdot \begin{pmatrix}
+	a \\ b \\ c
+\end{pmatrix} = 0,\text{ где } A = \begin{pmatrix}
+	A_{11} & A_{12} & A_{13} \\
+	A_{12} & A_{22} & A_{23} \\
+	A_{13} & A_{23} & A_{33}
+\end{pmatrix}, E = \begin{pmatrix}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1
+\end{pmatrix}$$
+
+Тогда задача свелась к поиску собственных значений для матрицы $A$. Тем или иным способом (например, методом Якоби) находим три собственных значения: $\lambda_i, i=1,2,3$.
+
+Получаем три системы:
+
+$$\begin{cases}
+		(A_{11} - \lambda_i ) a + A_{12} b + A_{13} c = 0 \\
+		A_{12}a + (A_{22} - \lambda_i)b + A_{23}c = 0 \\
+		A_{13}a + A_{23}b + (A_{33} - \lambda_i)c = 0
+	\end{cases}, i = 1,2,3$$
+
+Данная система однородная, поэтому имеет бесконечное число решений.
+
+Находим теперь собтвенные векторы, решая данную однородную систему тем или иным способом. Получаем три вектора, каждый из которых отвечает своему собственному значению: $v_i, \; i=1,2,3$. Нормируя наши собственные векторы, мы получаем выполнения ограничения единичности (пятого уравнения системы).
+
+Пользуясь формулой для $d$ от $a,b,c$, выведенной ранее, получаем уравнения трех плоскостей:
+$$\pi_i: \; a_i x + b_i y + c_i z + d_i = 0$$
+
+Найдем для каждой полученной плоскости значение нашего функционала:
+$$L_i(a_i, b_i, c_i, d_i) = \underset{j=1}{\overset{n}{\sum}}(a_ix_j+b_iy_j+c_iz_j+d_i)^2, i=1,2,3$$
+
+Выбираем $L = min \{L_1, L_2, L_3\}$. Без ограничения общности пусть $L_1 < L_2, \; L_1 < L_3 \Rightarrow a = a_1, b = b_1, c = c_1, d = d_1$.
+
+Таким образом, мы однозначно нашли плоскость, которая аппроксимирует заданное множество точек в пространстве наилучшим образом.
