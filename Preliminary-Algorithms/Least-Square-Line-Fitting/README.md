@@ -98,11 +98,12 @@ $$a = -\frac{A_{1,2}}{A_{1,1}-\lambda_1}, \; b =1, \; d = -\frac{1}{n}(a * \unde
 
 Будем искать прямую в параметрическом виде. Пусть $(m, n, p)$ - напрявляющий вектор прямой, $(x_0, y_0, z_0)$ - некоторая точка прямой. Тогда следующая система задает прямую в пространстве: 
 
-$$\mathit{l}: \; \begin{cases}
+$$\mathit{l}:  \begin{cases}
 		x = x_0 + m \cdot t \\
 		y = y_0 + n \cdot t \\
 		z = z_0 + p \cdot t
-	\end{cases}$$, где $t \in \mathbb{R}$ - параметр.
+	\end{cases}$$
+, где $t \in \mathbb{R}$ - параметр.
 
 В качестве точки $(x_0, y_0, z_0)$ выбирем центр масс системы данных точек. Таким образом:
 $x_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} x_i, \; y_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} y_i, \; z_0 = \frac{1}{n}\underset{i=1}{\overset{n}{\sum}} z_i$.
@@ -132,7 +133,9 @@ $$[\overline{\mathit{l}}, \overline{M_0 M_1}] = \begin{vmatrix}
 \end{vmatrix}, \begin{vmatrix}
 	m & n \\
 	x_1 - x_0 & y_1 - y_0
-\end{vmatrix}\right) = (n (z_1 - z_0) - p (y_1 - y_0), p (x_1 - x_0) - m (z_1 - z_0), m (y_1 - y_0) - n (x_1 - x_0)) = $$
+\end{vmatrix}\right) = $$
+
+$$ = (n (z_1 - z_0) - p (y_1 - y_0), p (x_1 - x_0) - m (z_1 - z_0), m (y_1 - y_0) - n (x_1 - x_0)) = $$
 
 $$ = (n \triangle_{z_1} - p \triangle_{y_1}, p \triangle_{x_1} - m \triangle_{z_1}, m \triangle_{y_1} - n \triangle_{x_1})\text{, где }\begin{cases}
 	\triangle_{x_1} = x_1 - x_0 \\
