@@ -4,7 +4,7 @@
 
 Дано множество из точек в пространстве. Необходимо найти плоскость, аппроксимирущую данное множество точек с наилучшей точностью.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/1.jpg" alt="c" width="500" height="500"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/33f547e8fe151cf23d36005db11a27432d161b44/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/1.png" alt="c" width="500" height="500"/>
 
 Пусть имеется набор из $n$ точек: $P = \Set{p_i = (x_i, y_i, z_i), i=1,\dots,n}$. 
 
@@ -14,7 +14,7 @@
 
 $$d (M_0, \mathit{\pi}) = \frac{| a x_0 + b y_0 + c z_0 + d |}{\sqrt{a^2 + b^2 + c^2}}$$
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/2.jpg" alt="c" width="250" height="250"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/33f547e8fe151cf23d36005db11a27432d161b44/Preliminary-Algorithms/Least-Square-Plane-Fitting/images/2.jpg" alt="c" width="250" height="250"/>
 
 Будем искать нормированное уравнение плоскости, которое получается из общего уравнения делением всех членов на $\sqrt{a^2+b^2+с,2}$: $a'x+b'y+с'+d'=0$. Тогда расстояние от точки $M_0 = (x_0,y_0, z_0)$ до плоскости равно абсолютному значению подстановки точки в уравнение плоскости и вычисляется по формуле:
 
