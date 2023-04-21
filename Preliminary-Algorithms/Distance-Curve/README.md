@@ -34,7 +34,7 @@ $$a (\cos{\varphi} x' -\sin{\varphi}y')^2 + b (\sin{\varphi} x' + \cos{\varphi} 
 $$-2a\sin{\varphi}\cos{\varphi} + 2b\sin{\varphi}\cos{\varphi}+c(\cos^2{\varphi}-\sin^2{\varphi}) =  (b-a)\sin{2\varphi} + c \cos{2\varphi}$$
 
 Мы хотим найти такое $\varphi$, чтобы $c'=0$, т.е.:
-$$\ctg{2\varphi} = \frac{\cos{2\varphi}}{\sin{2\varphi}} = \frac{a - b}{c} \; \Rightarrow \; \varphi = \frac{1}{2}\arcctg{\frac{a - b}{c}}$$
+$$ctg{2\varphi} = \frac{\cos{2\varphi}}{\sin{2\varphi}} = \frac{a - b}{c}  \Rightarrow  \varphi = \frac{1}{2}atan{\frac{a - b}{c}}$$
 
 Задача разрешима, т.к. если бы $c = 0$, то не требовалось бы никакого поворота. Т.о., в повернутой (штрихованной) системе координат кривая примет вид:
 $$\begin{gathered}
