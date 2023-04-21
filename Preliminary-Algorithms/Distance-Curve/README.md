@@ -37,15 +37,14 @@ $$-2a\sin{\varphi}\cos{\varphi} + 2b\sin{\varphi}\cos{\varphi}+c(\cos^2{\varphi}
 $$ctg{2\varphi} = \frac{\cos{2\varphi}}{\sin{2\varphi}} = \frac{a - b}{c}  \Rightarrow  \varphi = \frac{1}{2}atan{\frac{a - b}{c}}$$
 
 Задача разрешима, т.к. если бы $c = 0$, то не требовалось бы никакого поворота. Т.о., в повернутой (штрихованной) системе координат кривая примет вид:
-$$\begin{gathered}
-	\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = 0 \\
-	\begin{cases}
+$$\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = 0$$
+
+$$\begin{cases}
 		\lambda_1 = a \cos^2{\varphi} + b \sin^2{\varphi} + c \cos{\varphi} \sin{\varphi}\\
 		\lambda_2 = a \sin^2{\varphi} + b \cos^2{\varphi} - c \cos{\varphi} \sin{\varphi}\\
 		d' = d \cos{\varphi} + e \sin{\varphi} \\
 		e' = -d \sin{\varphi} + e \cos{\varphi}
-	\end{cases}
-\end{gathered}$$
+	\end{cases}$$
 
 Покажем, что кривая полученного вида параллельным переносом приводится к одному из следующих видов:
 1) $\lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f'' = 0$, $\lambda_1, \lambda_2 \not = 0$
