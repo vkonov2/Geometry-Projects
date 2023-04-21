@@ -73,6 +73,7 @@ $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, �
 
 - если $d' = 0$, то:
 		$$\lambda_2 y'^2 + e'y' + f = \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + f''$$
+
 	Имеем формулы замены координат, обратной к искомой: 
 	$$\begin{cases}
 		x'' = x'\\
@@ -80,9 +81,9 @@ $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, �
 	\end{cases}$$
 
 Т.к. замена координат ортогональна, то $\rho (\gamma, P_i) = \rho (\gamma'', P''_i)$. Найдем $\rho (\gamma'', P''_i)$. Составим функцию квадрата расстояния в зависимости от полученного вида кривой:
-$$\rho^2 (\gamma_1'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{\frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right)} - y''_i \right)^2 \\
-	\rho^2 (\gamma_2'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{d'}{\lambda_2} x''} - y''_i \right)^2 \\
-	\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{f''}{\lambda_2}} - y''_i \right)^2$$
+$$\rho^2 (\gamma_1'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{\frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right)} - y''_i \right)^2$$
+$$\rho^2 (\gamma_2'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{d'}{\lambda_2} x''} - y''_i \right)^2$$
+$$\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{f''}{\lambda_2}} - y''_i \right)^2$$
 
 Совершим параллельный перенос на вектор $(x''_i, y''_i)$, сделав эту точку новым центром координат.
 
@@ -90,7 +91,7 @@ $$\rho^2 (\gamma_1'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{\
 $$\begin{cases}
 	x' = x - x_i \\
 	y' = y - y_i
-\end{cases} \; \Rightarrow \; \begin{cases}
+\end{cases} \Rightarrow \begin{cases}
 	x = x' + x_i \\
 	y = y' + y_i
 \end{cases}$$
