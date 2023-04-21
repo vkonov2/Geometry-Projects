@@ -41,7 +41,7 @@ This repository contains bruter simulation project that have been done during my
 
 В решении было использована кривая Фернандеса-Гуасти (т.н. squircle) – это плоская алгебраическая кривая, которая является промежуточной формой между кругом и квадратом. У нее есть качественные особенности, которые похожи на более известную кривую Ламе. Определения, свойства и формулы, использованные в алгоритме описаны в [статье](https://arxiv.org/pdf/1604.02174.pdf).
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/squircle.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/squircle.png" alt="c" width="500" height="100"/>
 
 <h5>Алмаз -> бриллиант</h5>
 
