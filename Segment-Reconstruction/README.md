@@ -51,9 +51,6 @@ Straight lines that approximate the point sets.
 Found segments, spatial solid and original projection contours.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realresult.png" alt="c" width="500" height="400"/>
-
-Found segments, spatial solid and original projection contours.
-
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realsideview.png" alt="c" width="500" height="400"/>
 
 <h2 align="left">Method №2</h2>
@@ -65,11 +62,27 @@ Found segments, spatial solid and original projection contours.
 3) In each layer find lines from points parallel to the projection directions and obtain a triangle. Find the point minimally distant from the three given lines.
 4) Approximate the obtained set by the straight line.
 
+Adding points and layering.
 
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/120.jpg" alt="c" width="400" height="400"/>
+
+Obtaining the point minimally distant from the three given lines.
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/122.jpg" alt="c" width="400" height="400"/>
 
 <h3 align="left">Examples</h3>
 
+Average points in each layer and the initial sets.
 
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2synthmidpoints.png" alt="c" width="500" height="400"/>
+
+Found segment and initial sets of synthetic data.
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2synth.png" alt="c" width="500" height="400"/>
+
+Found segments, spatial solid and original projection contours.
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2real.png" alt="c" width="500" height="400"/> <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2realsideview.png" alt="c" width="500" height="400"/>
 
 <h2 align="left">Comparison of methods and verification of results</h2>
 
