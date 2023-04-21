@@ -6,5 +6,5 @@ This repository contains projects related with computational geometry that have 
   - [ ] [Segment Reconstruction](https://github.com/vkonov2/Geometry-Projects/tree/main/Ellipse-Reconstruction)
   - [ ] [Inertial Axes of Solid](https://github.com/vkonov2/Geometry-Projects/tree/main/Inertial-Axes-of-Solid)
   - [ ] [Girdle Recognition](https://github.com/vkonov2/Geometry-Projects/tree/main/Girdle-Recognition)
-  - [ ] [Bruter Programming](https://github.com/vkonov2/Geometry-Projects/tree/main/Bruter-Programming)
+  - [ ] [Bruter Simulation](https://github.com/vkonov2/Geometry-Projects/tree/main/Bruter-Simulation)
   - [ ] [Preliminary Algorithms](https://github.com/vkonov2/Geometry-Projects/tree/main/Preliminary-Algorithms)
