@@ -52,9 +52,7 @@ $$\begin{cases}
 3) $\lambda_2 (y'')^2 + f'' = 0$, $\lambda_2 \not = 0$
 
 $1$: $\lambda_1, \lambda_2 \not = 0$. Тогда выделяем полные квадраты:
-$$\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f =$$
-
-$$= \lambda_1 \left(x' + \frac{d'}{2\lambda_1}\right)^2 + \lambda_2 \left(y' + \frac{e'}{2\lambda_2}\right)^2 + \left(f - \frac{d'^2}{4\lambda_1} - \frac{e'^2}{4\lambda_2}\right) = \lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f''$$
+$$\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = \lambda_1 \left(x' + \frac{d'}{2\lambda_1}\right)^2 + \lambda_2 \left(y' + \frac{e'}{2\lambda_2}\right)^2 + \left(f - \frac{d'^2}{4\lambda_1} - \frac{e'^2}{4\lambda_2}\right) = \lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f''$$
 
 Имеем формулы замены координат, обратной к исходной:
 
@@ -65,7 +63,7 @@ $$\begin{cases}
 
 $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, то поменяем координаты местами). Возможны два случая:
 - если $d' \not = 0$, то:
-		$$\\lambda_2 y'^2 + d'x' + e'y' + f
+		$$\lambda_2 y'^2 + d'x' + e'y' + f
 			= \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + d'x' + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + d' x''}$$
 		Имеем формулы замены координат, обратной к искомой: $$\displaystyle \begin{cases}
 			x'' = x' + \frac{1}{d'}\left( f - \frac{e'^2}{4\lambda_2} \right) \\
