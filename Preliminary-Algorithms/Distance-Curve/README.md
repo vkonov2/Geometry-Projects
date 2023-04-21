@@ -112,18 +112,14 @@ $$\begin{cases}
 \end{cases}$$
 
 После параллельного переноса расстояния также сохранятся, но функционал примет более удобный вид:
-$$\begin{gathered}
-	\rho^2 (\gamma_1'', P''_i) = \left( x'' \right)^2 + \frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right) \\
-	\rho^2 (\gamma_2'', P''_i) = \left( x'' \right)^2 -\frac{d'}{\lambda_2} x'' \\
-	\rho^2 (\gamma_3'', P''_i) = \left( x'' \right)^2 -\frac{f''}{\lambda_2}
-\end{gathered}$$
+$$\rho^2 (\gamma_1'', P''_i) = \left( x'' \right)^2 + \frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right)$$
+$$\rho^2 (\gamma_2'', P''_i) = \left( x'' \right)^2 -\frac{d'}{\lambda_2} x''$$
+$$\rho^2 (\gamma_3'', P''_i) = \left( x'' \right)^2 -\frac{f''}{\lambda_2}$$
 
 Найдем производную полученной функции по $x''$ и значение $x''$:
-$$\begin{gathered}
-	\frac{\partial}{\partial x''}\rho^2 (\gamma_1'', P''_i) = 2x'' - 2\frac{\lambda_1}{\lambda_2} x'' = 0 \; \Rightarrow \; x'' \left(1 - \frac{\lambda_1}{\lambda_2}\right) = 0\\
-	\frac{\partial}{\partial x''}\rho^2 (\gamma_2'', P''_i) = 2 x'' -\frac{d'}{\lambda_2} = 0 \; \Rightarrow \; x'' = \frac{d'}{2\lambda_2}\\
-	\frac{\partial}{\partial x''}\rho^2 (\gamma_3'', P''_i) = 2 x'' = 0 \; \Rightarrow \; x'' = 0
-\end{gathered}$$
+$$\frac{\partial}{\partial x''}\rho^2 (\gamma_1'', P''_i) = 2x'' - 2\frac{\lambda_1}{\lambda_2} x'' = 0  \Rightarrow  x'' \left(1 - \frac{\lambda_1}{\lambda_2}\right) = 0$$
+$$\frac{\partial}{\partial x''}\rho^2 (\gamma_2'', P''_i) = 2 x'' -\frac{d'}{\lambda_2} = 0  \Rightarrow  x'' = \frac{d'}{2\lambda_2}$$
+$$\frac{\partial}{\partial x''}\rho^2 (\gamma_3'', P''_i) = 2 x'' = 0 \; \Rightarrow \; x'' = 0$$
 
 Тогда искомое расстояние будет равно:
 $$\begin{gathered}
