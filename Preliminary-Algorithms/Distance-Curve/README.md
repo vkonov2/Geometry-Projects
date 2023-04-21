@@ -52,10 +52,9 @@ $$\begin{cases}
 3) $\lambda_2 (y'')^2 + f'' = 0$, $\lambda_2 \not = 0$
 
 $1$: $\lambda_1, \lambda_2 \not = 0$. Тогда выделяем полные квадраты:
-$$\begin{gathered}
-	\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = \\
-	= \lambda_1 \left(x' + \frac{d'}{2\lambda_1}\right)^2 + \lambda_2 \left(y' + \frac{e'}{2\lambda_2}\right)^2 + \left(f - \frac{d'^2}{4\lambda_1} - \frac{e'^2}{4\lambda_2}\right) = \lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f''
-\end{gathered}$$
+$$\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f =$$
+
+$$= \lambda_1 \left(x' + \frac{d'}{2\lambda_1}\right)^2 + \lambda_2 \left(y' + \frac{e'}{2\lambda_2}\right)^2 + \left(f - \frac{d'^2}{4\lambda_1} - \frac{e'^2}{4\lambda_2}\right) = \lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f''$$
 
 Имеем формулы замены координат, обратной к исходной:
 
@@ -66,18 +65,14 @@ $$\begin{cases}
 
 $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, то поменяем координаты местами). Возможны два случая:
 - если $d' \not = 0$, то:
-		$$\begin{gathered}
-			\lambda_2 y'^2 + d'x' + e'y' + f = \\
-			= \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + d'x' + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + d' x''
-		\end{gathered}$$
+		$$\\lambda_2 y'^2 + d'x' + e'y' + f
+			= \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + d'x' + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + d' x''}$$
 		Имеем формулы замены координат, обратной к искомой: $$\displaystyle \begin{cases}
 			x'' = x' + \frac{1}{d'}\left( f - \frac{e'^2}{4\lambda_2} \right) \\
 			y'' = y' + \frac{e'}{2\lambda_2}
 		\end{cases}$$
 - если $d' = 0$, то:
-		$$\begin{gathered}
-			\lambda_2 y'^2 + e'y' + f = \\
-			= \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + f''
+		$$\lambda_2 y'^2 + e'y' + f = \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + f''
 		\end{gathered}$$
 		Имеем формулы замены координат, обратной к искомой: $$\displaystyle \begin{cases}
 			x'' = x'\\
@@ -85,11 +80,9 @@ $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, �
 		\end{cases}$$
 
 Т.к. замена координат ортогональна, то $\rho (\gamma, P_i) = \rho (\gamma'', P''_i)$. Найдем $\rho (\gamma'', P''_i)$. Составим функцию квадрата расстояния в зависимости от полученного вида кривой:
-$$\begin{gathered}
-	\rho^2 (\gamma_1'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{\frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right)} - y''_i \right)^2 \\
+$$\rho^2 (\gamma_1'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{\frac{1}{\lambda_2} \left( f'' - \lambda_1 (x'')^2 \right)} - y''_i \right)^2 \\
 	\rho^2 (\gamma_2'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{d'}{\lambda_2} x''} - y''_i \right)^2 \\
-	\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{f''}{\lambda_2}} - y''_i \right)^2
-\end{gathered}$$
+	\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-\frac{f''}{\lambda_2}} - y''_i \right)^2$$
 
 Совершим параллельный перенос на вектор $(x''_i, y''_i)$, сделав эту точку новым центром координат.
 
