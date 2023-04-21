@@ -18,7 +18,7 @@
 
 Возникает вопрос: возможен ли для произвольного твердого тела случай, когда векторы $\vec{L}$ и $\vec{w}$ совпадают? Ответ - да, т.е. для всякого тела и любой точки $O$ имеются по крайней мере три взаимно перпендикулярных направления $\vec{w}$ (три взаимно перпендикулярные оси вращения), для которых направления $\vec{L}$ и $\vec{w}$ совпадают - это и есть **главные оси инерции** тела.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/4fde689a243a9103e9532d41f1d350239a607b2a/Inertial-Axes-Solid/images/im2.jpg" alt="c" width="500" height="500"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/4fde689a243a9103e9532d41f1d350239a607b2a/Inertial-Axes-Solid/images/im2.png" alt="c" width="500" height="500"/>
 
 <h2 align="left">Теория о геометрии масс тела</h2>
 
