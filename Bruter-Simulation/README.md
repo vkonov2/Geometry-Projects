@@ -140,7 +140,7 @@
 
 <h3> Модель №5-1 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-1-1.png" alt="c" width="400" height="300"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-1-1.png" alt="c" width="350" height="300"/>
 
 камень в форме окружности с диаметром 8 mm с центром в (0,0) (красная окружность) вращается вокруг центра и стачивается до камня квадратной формы с тем же центром (синий квадрат) с некоторой фиксированной максимальной глубиной погружения диска, равной 0.4 mm
 
@@ -159,7 +159,7 @@
 
 <h3> Модель №5-2 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-2-1.png" alt="c" width="400" height="300"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-2-1.png" alt="c" width="350" height="300"/>
 
 камень в форме окружности с диаметром 8 mm с центром в (0,0) (красная окружность) вращается вокруг центра и стачивается до камня квадратной формы с тем же центром (синий квадрат) с некоторой фиксированной максимальной глубиной погружения диска, равной 0.4 mm
 
@@ -178,7 +178,7 @@
 
 <h3> Модель №5-3 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-3-1.png" alt="c" width="400" height="300"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-3-1.png" alt="c" width="350" height="300"/>
 
 камень в форме окружности с диаметром 8 mm с центром в (0,0) (красная окружность) вращается вокруг центра и стачивается до камня квадратной формы с тем же центром (синий квадрат) с некоторой фиксированной максимальной глубиной погружения диска, равной 0.4 mm
 
@@ -197,7 +197,7 @@
 
 <h3> Модель №5-4 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-4-1.png" alt="c" width="400" height="300"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/5-4-1.png" alt="c" width="350" height="300"/>
 
 камень в форме окружности с диаметром 8 mm с центром в (0,0) (красная окружность) вращается вокруг центра и стачивается до камня квадратной формы с тем же центром (синий квадрат) с некоторой фиксированной максимальной глубиной погружения диска, равной 0.4 mm
 
