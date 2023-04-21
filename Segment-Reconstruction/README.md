@@ -18,9 +18,8 @@ Anyway, we have a set of projection contours on the planes from which measuremen
 
 Now let’s turn to the theoretical statement of the problem. There are several sets of points on several planes in space. It is necessary to reconstruct the segment which is a prototype of projections on the planes as accurately as possible. Here you can see an example the problem with three point sets and three planes of projections.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/10.jpg" alt="c" width="400" height="400"/>
-
 Three point sets, three planes and a segment.
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/10.jpg" alt="c" width="400" height="400"/>
 
 <h2 align="left">Method №1</h2>
 
@@ -30,14 +29,14 @@ Three point sets, three planes and a segment.
 2) Find the planes through the obtained straight lines and projection directions and obtain the prism in the intersection of the three planes.
 3) Find the line minimally distant from the three given planes.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/11.jpg" alt="c" width="400" height="400"/>
 Construction of lines and planes through points of sets.
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/11.jpg" alt="c" width="400" height="400"/>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synth.png" alt="c" width="400" height="400"/>
 Found segment and initial sets of synthetic data.
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synth.png" alt="c" width="400" height="400"/>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec1.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec2.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec3.png" alt="c" width="200" height="200"/>
 Projections of the resulting segment on the planes.
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec1.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec2.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec3.png" alt="c" width="200" height="200"/>
 
 <h3 align="left">Examples</h3>
 
