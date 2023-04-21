@@ -67,7 +67,7 @@ $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, �
 
 		Имеем формулы замены координат, обратной к искомой: 
 		$$\begin{cases}
-			x'' = x' + \frac{1}{d'}\left( f - \frac{e'^2}{4\lambda_2} \right) \\
+			x'' = x' + \frac{1}{d'} ( f - \frac{e'^2}{4\lambda_2} ) \\
 			y'' = y' + \frac{e'}{2\lambda_2}
 		\end{cases}$$
 
