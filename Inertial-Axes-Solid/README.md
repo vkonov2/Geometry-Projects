@@ -28,28 +28,28 @@
 
 Для начала найдем центр масс твердого тела. 
 Так как мы имеем дело с везде плотным телом, то, рассматривая его границу будем рассматривать сосредоточение масс в центрах масс каждой грани, причем массу каждой грани будем считать пропорциональной ее площади. Более подробно: пусть грань $\Gamma_i$ состоит из вершин $P_1, \dots, P_m$, тогда центр масс данной грани однозначно находится через координаты этих точек - получаем массив центр масс граней $P_{\Gamma_i}$. Далее найдем площадь грани $\Gamma_i$ и всех остальных, и пусть $S$ равно сумме площадей всех граней, тогда масса, которую мы будем класть в найденный центр масс грани $\Gamma_i$, будет равна отношению площади грани $\Gamma_i$ к $S$, умноженному на общую массу $M$:
-$$m_{\Gamma_i} = \frac{S_{\Gamma_i}}{S} M \eqno(1)$$
+$$m_{\Gamma_i} = \frac{S_{\Gamma_i}}{S} M (1)$$
 Тогда центр масс всего тела $O_G$ можно найти по известной формуле:
-$$\overline{r_{O_G}} = \dfrac{\underset{i}{\overset{}{\sum}}m_{\Gamma_i} \overline{r_{P_{\Gamma_i}}}}{M}\eqno(2)$$
+$$\overline{r_{O_G}} = \dfrac{\underset{i}{\overset{}{\sum}}m_{\Gamma_i} \overline{r_{P_{\Gamma_i}}}}{M} (2)$$
 где суммирование проходит по всем граням тела. Теперь нам удобно будет рассматривать неподвижную систему координат $O_GXYZ$ с центром в точке $O_G$, получающуюся параллельным переносом из $O_{\text{н}}X_{\text{н}}Y_{\text{н}}Z_{\text{н}}$ на вектор $O_{\text{н}}O_G$.
 
 Исходя из поставленной задачи, будем искать оси (прямые), проходящие церез центр масс твердого тела, удовлетворяющие определенным свойствам, которые укажем далее. Таким образом, ищем прямую, проходящую через точку $O_G$ в направлении $(x_u, y_u, z_u)$. Воспользуемся представлением направляющего вектора через направляющие косинусы (это косинусы углов, которые вектор образует с положительными полуосями координат). Имеем следующие формулы:
-$$\cos{\alpha} = \frac{x_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}, \cos{\beta} = \frac{y_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}, \cos{\gamma} = \frac{z_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}\eqno(3)$$
+$$\cos{\alpha} = \frac{x_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}, \cos{\beta} = \frac{y_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}, \cos{\gamma} = \frac{z_u}{\sqrt{x_u^2 + y_u^2 + z_u^2}}(3)$$
 Тогда эти косинусы обладают очевидным свойством: $\displaystyle \cos^2{\alpha} + \cos^2{\beta} + \cos^2{\gamma} = 1$. Итак, имеем ось u, задаваемую вектором $(\cos{\alpha}, \cos{\beta}, \cos{\gamma})$ и точкой $O_G$.
 
 По определению **моментом инерции** $J_u$ тела относительно оси $u$ называют выражение
-$$J_u = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} r_{\Gamma_i}^2\eqno(4)$$
+$$J_u = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} r_{\Gamma_i}^2(4)$$
 где $m_{\Gamma_i}$ - масса $i$-й грани тела, $r_{\Gamma_i}$ - расстояние центра масс грани $\Gamma_i$ от оси $u$, суммирование производится по всем граням тела. Момент инерции характеризует распределение массы тела относительно оси.
 
 С помощью декартовой системы координат $OXYZ$, начало которой выбрано в точке $O_G$ оси u с направляющими косинусами $(\cos{\alpha}, \cos{\beta}, \cos{\gamma})$, выражение момента инерции представляется в виде:
-$$J_u =J_x \cos^2{\alpha} + J_y \cos^2{\beta} + J_z \cos^2{\gamma} - 2 J_{xy} \cos{\alpha}\cos{\beta} − 2 J_{xz} \cos{\alpha}\cos{\gamma} − 2 J_{yz} \cos{\beta}\cos{\gamma}\eqno(5)$$
+$$J_u =J_x \cos^2{\alpha} + J_y \cos^2{\beta} + J_z \cos^2{\gamma} - 2 J_{xy} \cos{\alpha}\cos{\beta} − 2 J_{xz} \cos{\alpha}\cos{\gamma} − 2 J_{yz} \cos{\beta}\cos{\gamma}(5)$$
 где 
 $$J_x = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} (y_{\Gamma_i}^2 + z_{\Gamma_i}^2), J_y = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} (x_{\Gamma_i}^2 + z_{\Gamma_i}^2), J_z = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} (x_{\Gamma_i}^2 + y_{\Gamma_i}^2)$$
 $$J_{xy} = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} x_{\Gamma_i} y_{\Gamma_i},  J_{xz} = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} x_{\Gamma_i} z_{\Gamma_i},  J_{yz} = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} y_{\Gamma_i} z_{\Gamma_i}$$
 осевые и центробежные моменты инерции тела.
 
 Используя векторно-матричную символику для момента инерции, получим:
-$$J_u = \begin{Vmatrix} \cos{\alpha} & \cos{\beta} & \cos{\gamma} \end{Vmatrix} \cdot \begin{Vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{Vmatrix} \cdot \begin{Vmatrix} \cos{\alpha} \\ \cos{\beta} \\ \cos{\gamma} \end{Vmatrix} = \overline{e}^T J \overline{e} \eqno(6)$$
+$$J_u = \begin{Vmatrix} \cos{\alpha} & \cos{\beta} & \cos{\gamma} \end{Vmatrix} \cdot \begin{Vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{Vmatrix} \cdot \begin{Vmatrix} \cos{\alpha} \\ \cos{\beta} \\ \cos{\gamma} \end{Vmatrix} = \overline{e}^T J \overline{e} (6)$$
 где $\overline{e}(\cos{\alpha},\cos{\beta},\cos{\gamma})$ - орт оси $u$, заданный в указанной системе координат своими направляющими косинусами, а симметрическая матрица $\displaystyle J = \begin{Vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{Vmatrix}$ определяет \blue{тензор инерции} тела (тензор второго ранга). 
 
 Свойства тензора инерции:
@@ -71,7 +71,7 @@ $$J_u = \begin{Vmatrix} \cos{\alpha} & \cos{\beta} & \cos{\gamma} \end{Vmatrix} 
 
 Возьмем на оси $u$ точку $M(x, y, z)$ на расстоянии,
 равном $\displaystyle \frac{K}{\sqrt{J_u}}$ от точки $O_G$, где $K$ - некоторый размерный коэффициент. Тогда получаем, что:
-$$x = \frac{K}{\sqrt{J_u}} \cos{\alpha}, y = \frac{K}{\sqrt{J_u}} \cos{\beta}, z = \frac{K}{\sqrt{J_u}} \cos{\gamma} \eqno(7)$$
+$$x = \frac{K}{\sqrt{J_u}} \cos{\alpha}, y = \frac{K}{\sqrt{J_u}} \cos{\beta}, z = \frac{K}{\sqrt{J_u}} \cos{\gamma} (7)$$
 Выразим косинусы:
 $$\cos{\alpha} = x \frac{\sqrt{J_u}}{K},
 \cos{\beta} = y \frac{\sqrt{J_u}}{K}, 
@@ -81,11 +81,11 @@ $$\cos{\alpha} = x \frac{\sqrt{J_u}}{K},
 $$J_u = J_x \left(x \frac{\sqrt{J_u}}{K}\right)^2 + J_y \left(y \frac{\sqrt{J_u}}{K}\right)^2 + J_z \left(z \frac{\sqrt{J_u}}{K}\right)^2 − 2 J_{xy} \left(x \frac{\sqrt{J_u}}{K}\right)\left(y \frac{\sqrt{J_u}}{K}\right) − 2 J_{xz}\left (x \frac{\sqrt{J_u}}{K}\right)\left(z \frac{\sqrt{J_u}}{K}\right) − 2 J_{yz} \left(y \frac{\sqrt{J_u}}{K}\right)\left(z \frac{\sqrt{J_u}}{K}\right)$$
 
 После упрощения получаем уравнение поверхности второго порядка:
-$$J_x x^2 + J_y y^2 + J_z z^2 − 2 J_{xy} xy − 2 J_{xz} xz − J_{yz} yz = K^2\eqno(8)$$
+$$J_x x^2 + J_y y^2 + J_z z^2 − 2 J_{xy} xy − 2 J_{xz} xz − J_{yz} yz = K^2(8)$$
 Эта поверхность является геометрическим местом точек M при всевозможных направлениях оси u. Поскольку момент инерции относительно произвольной оси величина, отличная от нуля (в невырожденном случае строго положительная величина), то поверхность $(8)$ не имеет точек на бесконечности и, значит, является эллипсоидом - **эллипсоидом энерции**.
 
 Выбор осей симметрии эллипсоида инерции в качестве координатных осей позволяет привести уравнение эллипсоида инерции $(8)$ к канонической форме. Оси симметрии эллипсоида инерции, построенного в некоторой точке, называются \blue{главными осями инерции} для этой точки. И тогда в осях $O_G \xi \eta \zeta$, главных для точки $O_G$, выражение момента энереции $J_u$ приобретает вид:
-$$J_u =J_{\xi} \cos^2{\alpha} + J_{\eta} \cos^2{\beta} + J_{\zeta} \cos^2{\gamma}\eqno(9)$$
+$$J_u =J_{\xi} \cos^2{\alpha} + J_{\eta} \cos^2{\beta} + J_{\zeta} \cos^2{\gamma}(9)$$
 Центробежные моменты инерции для главных осей
 обращаются в нуль, т.е. если ось $O_G \xi$ главная, то
 $J_{\xi \eta} = J_{\xi \zeta} = 0$. Главные оси инерции, построенные для центра масс тела, называются \blue{главными центральными осями инерции}.
@@ -95,10 +95,10 @@ $J_{\xi \eta} = J_{\xi \zeta} = 0$. Главные оси инерции, пос
 <h3 align="left">Алгоритм построения главных центральных осей инерции</h3>
 
 Так как направлениям главных осей инерции соответствуют оси симметрии эллипсоида инерции, а значит, и стационарные значения моментов инерции, то задача нахождения направлений главных осей сводится к рассмотрению необходимого условия экстремума выражения $(5)$ при условии:
-$$f (\cos{\alpha} , \cos{\beta} , \cos{\gamma} ) = \cos^2{\alpha} + \cos^2{\beta} + \cos^2 {\gamma} − 1 = 0 \eqno(10)$$
+$$f (\cos{\alpha} , \cos{\beta} , \cos{\gamma} ) = \cos^2{\alpha} + \cos^2{\beta} + \cos^2 {\gamma} − 1 = 0 (10)$$
 
 Воспользуемся методом неопределенных множителей Лагранжа, тогда задача сводится к рассмотрению необходимого условия экстремума функции:
-$$\varphi(\cos{\alpha} , \cos{\beta} , \cos{\gamma}) = J_u (\cos{\alpha} , \cos{\beta} , \cos{\gamma}) - \lambda f (\cos{\alpha} , \cos{\beta} , \cos{\gamma})\eqno(11)$$
+$$\varphi(\cos{\alpha} , \cos{\beta} , \cos{\gamma}) = J_u (\cos{\alpha} , \cos{\beta} , \cos{\gamma}) - \lambda f (\cos{\alpha} , \cos{\beta} , \cos{\gamma})(11)$$
 
 Распишем функцию: 
 $$\varphi(\cos{\alpha} , \cos{\beta} , \cos{\gamma}) = J_x \cos^2{\alpha} + J_y \cos^2{\beta} + J_z \cos^2{\gamma} - 2 J_{xy} \cos{\alpha}\cos{\beta} − 2 J_{xz} \cos{\alpha}\cos{\gamma} − 2 J_{yz} \cos{\beta}\cos{\gamma} - \lambda (\cos^2{\alpha} + \cos^2{\beta} + \cos^2 {\gamma} − 1)$$
@@ -127,7 +127,7 @@ $$\begin{cases}
 	(J_x - \lambda) \cos{\alpha} - J_{xy} \cos{\beta} - J_{xz} \cos{\gamma} = 0 \\
 	- J_{xy} \cos{\alpha} + (J_y - \lambda) \cos{\beta} - J_{yz} \cos{\gamma} = 0 \\
 	- J_{xz} \cos{\alpha} - J_{yz} \cos{\beta} + (J_z - \lambda) \cos{\gamma} = 0
-\end{cases}\eqno(12)$$
+\end{cases}(12)$$
 
 Таким образом, имеем однородную систему уравнений на косинусы:
 $$\begin{pmatrix} 
@@ -136,14 +136,14 @@ $$\begin{pmatrix}
 	-J_{xz} & -J_{yz} & J_z - \lambda 
 \end{pmatrix} \begin{pmatrix}
 	\cos{\alpha} \\ \cos{\beta} \\ \cos{\gamma}
-\end{pmatrix} = 0 \eqno(13)$$
+\end{pmatrix} = 0 (13)$$
 
 Однородная система линейных уравнений $(12)$ относительно $\cos{\alpha}$, $\cos{\beta}$, $\cos{\gamma}$ имеет нетривиальное решение, если детерминант ее равен нулю:
 $$det \| J - \lambda E \| = \begin{Vmatrix} 
 	J_x - \lambda & -J_{xy} & -J_{xz} \\
 	-J_{xy} & J_y - \lambda & -J_{yz} \\
 	-J_{xz} & -J_{yz} & J_z - \lambda 
-\end{Vmatrix} = 0 \eqno(14)$$
+\end{Vmatrix} = 0 (14)$$
 
 Левая часть равенства $(14)$ представляет собой полином третьей степени относительно $\lambda$. Этот полином имеет три действительных корня, т.к. тензор $J$ симметрический с действительными компонентами.
 
@@ -159,14 +159,14 @@ $$\underset{i=1}{\overset{3}{\sum}}\frac{\partial J_u}{\partial \chi_i} \chi_i -
 	\chi_1 = \cos{\alpha} \\
 	\chi_2 = \cos{\beta} \\
 	\chi_3 = \cos{\gamma}
-\end{cases} \eqno(15)$$
+\end{cases} (15)$$
 
 Напомним известный термин и факт, связанный с ним: функция $f(x_1, \dots, x_n)$ называется **однородной степени $l$**, если она удовлетворяет уравнению:
-$$f(\alpha x_1, \dots, \alpha x_n) = \alpha^l f (x_1, \dots, x_n) \eqno(16)$$
+$$f(\alpha x_1, \dots, \alpha x_n) = \alpha^l f (x_1, \dots, x_n) (16)$$
 где $l$ - целое положительное число.
 
 С однородными функциями связана следующая важная теорема (**соотношение Эйлера**): функция $f$ является однородной степени $l$ тогда и только тогда, когда выполняется следующее соотношение:
-$$l \cdot f (x_1, \dots, x_n) = \underset{i=1}{\overset{n}{\sum}}\frac{\partial f}{\partial x_i} x_i\eqno(17)$$
+$$l \cdot f (x_1, \dots, x_n) = \underset{i=1}{\overset{n}{\sum}}\frac{\partial f}{\partial x_i} x_i(17)$$
 
 Функция $J_u$ очевидно однородна, т.к. она полилинейна. По теореме Эйлера об однородных функциях из $(17)$ имеем:
 $$J_u - \lambda = 0$$
