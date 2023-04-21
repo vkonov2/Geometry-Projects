@@ -56,6 +56,7 @@ $$\begin{gathered}
 	\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = \\
 	= \lambda_1 \left(x' + \frac{d'}{2\lambda_1}\right)^2 + \lambda_2 \left(y' + \frac{e'}{2\lambda_2}\right)^2 + \left(f - \frac{d'^2}{4\lambda_1} - \frac{e'^2}{4\lambda_2}\right) = \lambda_1 (x'')^2 + \lambda_2 (y'')^2 + f''
 \end{gathered}$$
+
 Имеем формулы замены координат, обратной к исходной:
 
 $$\begin{cases}
