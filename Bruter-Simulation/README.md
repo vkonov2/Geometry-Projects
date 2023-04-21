@@ -1,5 +1,4 @@
 # Bruter Simulation
-This repository contains bruter simulation project that have been done during my work.
 
 <h2>Описание работы</h2>
 
