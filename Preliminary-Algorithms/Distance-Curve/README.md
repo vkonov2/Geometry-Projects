@@ -4,9 +4,7 @@
 
 Имеем кривую второго порядка в общем виде и точку на плоскости. Необходимо как можно более точно найти расстояние от точки до кривой.
 
-<!-- <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/6.jpg" alt="c" width="500" height="500"/> -->
-
-\newpage
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/0e7bbb7528b4c0333bb55f595c8df718b86b9c69/Preliminary-Algorithms/Distance-Curve/images/dist0.png" alt="c" width="500" height="500"/>
 
 <h2 align="left">Алгоритм</h2>
 
