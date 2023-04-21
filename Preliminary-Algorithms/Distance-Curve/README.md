@@ -63,8 +63,8 @@ $$\begin{cases}
 
 $2$: $\lambda_2, d' \not = 0$ (если $\lambda_2 = 0$, $\lambda_1 \not = 0$, то поменяем координаты местами). Возможны два случая:
 - если $d' \not = 0$, то:
-		$$\lambda_2 y'^2 + d'x' + e'y' + f = \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + d'x' + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + d' x''}$$
-		
+		$$\lambda_2 y'^2 + d'x' + e'y' + f = \lambda_2 \left( y' + \frac{e'}{2 \lambda_2} \right)^2 + d'x' + \left( f - \frac{e'^2}{4\lambda_2} \right) = \lambda_2 (y'')^2 + d' x''$$
+
 		Имеем формулы замены координат, обратной к искомой: $$\displaystyle \begin{cases}
 			x'' = x' + \frac{1}{d'}\left( f - \frac{e'^2}{4\lambda_2} \right) \\
 			y'' = y' + \frac{e'}{2\lambda_2}
