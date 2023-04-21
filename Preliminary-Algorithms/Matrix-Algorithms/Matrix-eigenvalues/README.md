@@ -1,1 +1,0 @@
-The program allows you to calculate the eigenvalues of a matrix using the Jacobi method
