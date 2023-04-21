@@ -122,9 +122,9 @@ $$\frac{\partial}{\partial x''}\rho^2 (\gamma_2'', P''_i) = 2 x'' -\frac{d'}{\la
 $$\frac{\partial}{\partial x''}\rho^2 (\gamma_3'', P''_i) = 2 x'' = 0 \; \Rightarrow \; x'' = 0$$
 
 Тогда искомое расстояние будет равно:
-$$\begin{gathered}
-	\rho (\gamma_1'', P''_i) = \sqrt{ \left|\frac{f''}{\lambda_2}  \right|}, (\lambda_1 \not = \lambda_2), \; \rho (\gamma_2'', P''_i) = \sqrt{\left|-\frac{d'^2}{4\lambda_2^2}\right| }, \; \rho (\gamma_3'', P''_i) = \sqrt{ \left|-\frac{f''}{\lambda_2} \right|}
-\end{gathered}$$
+$$\rho (\gamma_1'', P''_i) = \sqrt{ \left|\frac{f''}{\lambda_2}  \right|}, (\lambda_1 \not = \lambda_2)$$
+$$\rho (\gamma_2'', P''_i) = \sqrt{\left|-\frac{d'^2}{4\lambda_2^2}\right| }$$ 
+$$\rho (\gamma_3'', P''_i) = \sqrt{ \left|-\frac{f''}{\lambda_2} \right|}$$
 
 <h3 align="left">Способ №2 - итеративное приближение</h3>
 
