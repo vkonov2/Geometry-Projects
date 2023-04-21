@@ -28,10 +28,7 @@ $$\begin{pmatrix}
 \end{pmatrix}$$
 
 Подставим в уравнение:
-$$\begin{gathered}
-	a (\cos{\varphi} x' -\sin{\varphi}y')^2 + b (\sin{\varphi} x' + \cos{\varphi} y')^2 + c (\cos{\varphi} x' -\sin{\varphi}y') (\sin{\varphi} x' + \cos{\varphi} y') + \\
-	+ d (\cos{\varphi} x' -\sin{\varphi}y') + e (\sin{\varphi} x' + \cos{\varphi} y') + f = 0
-\end{gathered}$$
+$$a (\cos{\varphi} x' -\sin{\varphi}y')^2 + b (\sin{\varphi} x' + \cos{\varphi} y')^2 + c (\cos{\varphi} x' -\sin{\varphi}y') (\sin{\varphi} x' + \cos{\varphi} y') + d (\cos{\varphi} x' -\sin{\varphi}y') + e (\sin{\varphi} x' + \cos{\varphi} y') + f = 0$$
 
 Коэффициент при $x'y'$ равен:
 $$-2a\sin{\varphi}\cos{\varphi} + 2b\sin{\varphi}\cos{\varphi}+c(\cos^2{\varphi}-\sin^2{\varphi}) =  (b-a)\sin{2\varphi} + c \cos{2\varphi}$$
