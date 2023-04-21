@@ -73,11 +73,9 @@ Obtaining the point minimally distant from the three given lines.
 
 <h3 align="left">Example (synthetic)</h3>
 
-Average points in each layer and the initial sets.
+Average points in each layer and the initial sets. Found segment and initial sets of synthetic data.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2synthmidpoints.png" alt="c" width="500" height="400"/> <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2synth.png" alt="c" width="500" height="400"/>
-
-Found segment and initial sets of synthetic data.
 
 <h3 align="left">Example (real)</h3>
 
