@@ -49,7 +49,8 @@ $$J_{xy} = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} x_{\Gamma_i} y_{\Gamma_i},
 осевые и центробежные моменты инерции тела.
 
 Используя векторно-матричную символику для момента инерции, получим:
-$$J_u = \begin{vmatrix} \cos{\alpha} & \cos{\beta} & \cos{\gamma} \end{vmatrix} \cdot \begin{vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{vmatrix} \cdot \begin{vmatrix} \cos{\alpha} \\ \cos{\beta} \\ \cos{\gamma} \end{vmatrix} = \overline{e}^T J \overline{e} (6)$$
+$$J_u = \begin{pmatrix} \cos{\alpha} & \cos{\beta} & \cos{\gamma} \end{pmatrix} \cdot \begin{pmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{pmatrix} \cdot \begin{pmatrix} \cos{\alpha} \\ \cos{\beta} \\ \cos{\gamma} \end{pmatrix} = \overline{e}^T J \overline{e} (6)$$
+
 где $\overline{e}(\cos{\alpha},\cos{\beta},\cos{\gamma})$ - орт оси $u$, заданный в указанной системе координат своими направляющими косинусами, а симметрическая матрица $\displaystyle J = \begin{vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{vmatrix}$ определяет \blue{тензор инерции} тела (тензор второго ранга). 
 
 Свойства тензора инерции:
