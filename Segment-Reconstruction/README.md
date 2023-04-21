@@ -93,17 +93,11 @@ Let we find the segment (straight line). The idea is to project this line onto t
 
 $$\Lambda = \underset{j=1}{\overset{3}{\sum}}\underset{i=1}{\overset{n_1, n_2, n_3}{\sum}}(A_j x_i^j + B_j y_i^j + C_j z_i^j + D_j)^2$$
 
-\begin{tabular}{|c|c|c|}
-	\hline
-	 & \textbf{Method №1} & \textbf{Method №2}\\
-	\hline
-	synthetic data & 5.286735e-3 & 6.596934e-3 \\
-	\hline
-	real data (positive) & 2.143562e-6 & 6.543256e-6 \\
-	\hline
-	real data (negative) & 5.324546e-4 & 8.859035e-4 \\
-	\hline
-\end{tabular}
+|   					|Method №1 		|Method №2	|
+|:----------------------|:-------------:|:---------:|
+|synthetic data   		|5.286735e-3   	|6.596934e-3|
+|real data (positive)   |2.143562e-6   	|6.543256e-6|
+|real data (positive)   |5.324546e-4   	|8.859035e-4|
 
 <h2 align="left">Conclusion</h2>
 
