@@ -44,7 +44,17 @@ Projections of the resulting segment on the planes.
 
 <h3 align="left">Examples</h3>
 
+Straight lines that approximate the point sets.
 
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1lineapprox.png" alt="c" width="400" height="400"/>
+
+Found segments, spatial solid and original projection contours.
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realresult.png" alt="c" width="400" height="400"/>
+
+Found segments, spatial solid and original projection contours.
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realsideview.png" alt="c" width="400" height="400"/>
 
 <h2 align="left">Method №2</h2>
 
