@@ -52,8 +52,7 @@ Straight lines that approximate the point sets.
 
 Found segments, spatial solid and original projection contours.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realresult.png" alt="c" width="500" height="400"/>
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realsideview.png" alt="c" width="500" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realresult.png" alt="c" width="500" height="400"/> <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1realsideview.png" alt="c" width="500" height="400"/>
 
 <h2 align="left">Method №2</h2>
 
