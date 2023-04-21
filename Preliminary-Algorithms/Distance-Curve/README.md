@@ -91,7 +91,9 @@ $$\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-
 $$\begin{cases}
 	x' = x - x_i \\
 	y' = y - y_i
-\end{cases} \Rightarrow \begin{cases}
+\end{cases}$$ 
+$\Rightarrow$	 
+$$\begin{cases}
 	x = x' + x_i \\
 	y = y' + y_i
 \end{cases}$$
