@@ -4,19 +4,20 @@
 
 Имеем кривую второго порядка в общем виде и точку на плоскости. Необходимо как можно более точно найти расстояние от точки до кривой.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/0e7bbb7528b4c0333bb55f595c8df718b86b9c69/Preliminary-Algorithms/Distance-Curve/images/dist0.png" alt="c" width="500" height="500"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/0e7bbb7528b4c0333bb55f595c8df718b86b9c69/Preliminary-Algorithms/Distance-Curve/images/dist0.png" alt="c" width="600" height="300"/>
 
 <h2 align="left">Алгоритм</h2>
 
 <h3 align="left">Способ №1 - замена координат</h3>
 
-Пусть имеем кривую второго порядка $\gamma$ в общем виде: $a x^2 + b y^2 + c xy + d x + e y + f = 0$ и точку $P_i = (x_i, y_i)$, от которой ищем расстояние до кривой $\gamma$.\\
+Пусть имеем кривую второго порядка $\gamma$ в общем виде: $a x^2 + b y^2 + c xy + d x + e y + f = 0$ и точку $P_i = (x_i, y_i)$, от которой ищем расстояние до кривой $\gamma$.
 
 Произведем несколько линейных замен координат, чтобы привести нашу кривую к более удобному виду.
 
 Покажем, что подходящим поворотом осей координат можно добиться того, что $c' = 0$, где штрих означает соотвующий коэффициент уравнения кривой в новой системе координат.
 
 Рассмотрим произвольный поворот:
+
 $$\begin{pmatrix}
 	x \\ y
 \end{pmatrix} = \begin{pmatrix}
@@ -25,15 +26,19 @@ $$\begin{pmatrix}
 \end{pmatrix} \begin{pmatrix}
 	x' \\ y'
 \end{pmatrix}$$
+
 Подставим в уравнение:
 $$\begin{gathered}
 	a (\cos{\varphi} x' -\sin{\varphi}y')^2 + b (\sin{\varphi} x' + \cos{\varphi} y')^2 + c (\cos{\varphi} x' -\sin{\varphi}y') (\sin{\varphi} x' + \cos{\varphi} y') + \\
 	+ d (\cos{\varphi} x' -\sin{\varphi}y') + e (\sin{\varphi} x' + \cos{\varphi} y') + f = 0
 \end{gathered}$$
+
 Коэффициент при $x'y'$ равен:
 $$-2a\sin{\varphi}\cos{\varphi} + 2b\sin{\varphi}\cos{\varphi}+c(\cos^2{\varphi}-\sin^2{\varphi}) =  (b-a)\sin{2\varphi} + c \cos{2\varphi}$$
+
 Мы хотим найти такое $\varphi$, чтобы $c'=0$, т.е.:
 $$\ctg{2\varphi} = \frac{\cos{2\varphi}}{\sin{2\varphi}} = \frac{a - b}{c} \; \Rightarrow \; \varphi = \frac{1}{2}\arcctg{\frac{a - b}{c}}$$
+
 Задача разрешима, т.к. если бы $c = 0$, то не требовалось бы никакого поворота. Т.о., в повернутой (штрихованной) системе координат кривая примет вид:
 $$\begin{gathered}
 	\lambda_1 x'^2 + \lambda_2 y'^2 + d' x' + e' y' + f = 0 \\
