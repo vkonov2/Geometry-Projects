@@ -59,43 +59,43 @@ This repository contains bruter simulation project that have been done during my
 
 <h3> Модель №1 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-1.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-1.png" alt="c" width="300" height="300"/>
 
 прицесса с квадратным рундистом и стороной 8mm, радиус диска 75mm, центр вращения бриллианта в центре бриллианта
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-2.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-2.png" alt="c" width="300" height="300"/>
 
 скругленный контур (красный) - это ГМТ центров катящейся окружности по границе квадрата
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-3.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/1-3.png" alt="c" width="500" height="500"/>
 
 графики координаты, скорости и ускорения центра диска от угла поворота камня
 
 <h3> Модель №2 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-1.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-1.png" alt="c" width="300" height="300"/>
 
 прицесса с квадратным рундистом и стороной 8mm, радиус диска 75mm, центр вращения бриллианта сдвинут на 1 mm к одной стороне принцессы и на 2 mm к соседней стороне принцессы
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-2.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-2.png" alt="c" width="300" height="300"/>
 
 скругленный контур (красный) - это ГМТ центров катящейся окружности по границе квадрата
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-3.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/2-3.png" alt="c" width="500" height="500"/>
 
 графики координаты, скорости и ускорения центра диска от угла поворота камня
 
 <h3> Модель №3 </h3>
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-1.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-1.png" alt="c" width="300" height="300"/>
 
 изумруд со сторонами 4 и 12 mm, и смещение центра вращения на 1 mm вдоль короткой стороны, а на 2mm вдоль длинной
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-2.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-2.png" alt="c" width="300" height="300"/>
 
 скругленный контур (красный) - это ГМТ центров катящейся окружности по границе прямоугольника
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-3.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/3-3.png" alt="c" width="500" height="500"/>
 
 графики координаты, скорости и ускорения центра диска от угла поворота камня
 
@@ -113,15 +113,15 @@ This repository contains bruter simulation project that have been done during my
 - шиповатость: дисперсия расстояния каждой вершины до центра окружность
 - количество вершин многоугольника
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-1.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-1.png" alt="c" width="300" height="300"/>
 
 произвольный многоугольник с центром (2, -1), средним радиусом 4, неравномерностью 0.05, шиповатостью 0.1 и 7 вершинами, радиус окружности равен 1.0
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-2.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-2.png" alt="c" width="300" height="300"/>
 
 скругленный контур - это ГМТ центров катящейся окружности
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-3.png" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/368df3c6b1f02d159556b4ee33a8953069cf5776/Bruter-Simulation/pics/4-3.png" alt="c" width="500" height="500"/>
 
 графики координаты, скорости и ускорения центра диска от угла поворота камня
 
