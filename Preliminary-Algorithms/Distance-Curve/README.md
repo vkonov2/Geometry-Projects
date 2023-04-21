@@ -89,11 +89,6 @@ $$\rho^2 (\gamma_3'', P''_i) = \left( x'' - x''_i \right)^2 + \left( \pm \sqrt{-
 
 Покажем изменение коэффициентов кривой при параллельном переносе на вектор $(x_i, y_i)$:
 $$\begin{cases}
-	x' = x - x_i \\
-	y' = y - y_i
-\end{cases}$$ 
-$\Rightarrow$	 
-$$\begin{cases}
 	x = x' + x_i \\
 	y = y' + y_i
 \end{cases}$$
