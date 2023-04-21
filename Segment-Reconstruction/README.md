@@ -2,7 +2,7 @@
 
 <h2>Origin of the problem</h2>
 
-<!-- <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/f0d3c3b501848cacb86ef4eb328352338f184da4/Preliminary-Algorithms/Least-Square-Line-Fitting/images/6.jpg" alt="c" width="500" height="500"/> -->
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/b1.png" alt="c" width="150" height="150"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/b2.png" alt="c" width="150" height="150"/>
 
 <h2 align="left">Problem Statement</h2>
 
