@@ -70,7 +70,7 @@ Adding points and layering.
 
 Obtaining the point minimally distant from the three given lines.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/122.jpg" alt="c" width="400" height="400"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/122.jpg" alt="c" width="550" height="400"/>
 
 <h3 align="left">Example (synthetic)</h3>
 
