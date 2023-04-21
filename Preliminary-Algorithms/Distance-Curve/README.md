@@ -162,7 +162,9 @@ $$\begin{cases}
 \end{cases}$$
 
 $$ax^2 + b \left( -\frac{1}{2b}(cx+e) \right)^2 + c x \left( -\frac{1}{2b}(cx+e) \right) + d x + e \left( -\frac{1}{2b}(cx+e) \right) + f = 0$$
+
 $$\left( a - \frac{c^2}{4b} \right) x^2 + \left( d-\frac{ce}{2b} \right)x + \left( f-\frac{e^2}{4b} \right) = 0$$
+
 $$x_{1,2} = \frac{\frac{ce}{2b} - d \pm \sqrt{\left( d-\frac{ce}{2b} \right)^2 - 4\left( a - \frac{c^2}{4b} \right)\left( f-\frac{e^2}{4b} \right)}}{2a - \frac{c^2}{2b}}$$
 
 В качестве $M$ возьмем модуль максимального из найденных $x_{1,2}$.\\
