@@ -34,6 +34,8 @@ Construction of lines and planes through points of sets.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/11.jpg" alt="c" width="400" height="400"/>
 
+<h3 align="left">Example (synthetic)</h3>
+
 Found segment and initial sets of synthetic data.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synth.png" alt="c" width="400" height="400"/>
@@ -42,7 +44,7 @@ Projections of the resulting segment on the planes.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec1.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec2.png" alt="c" width="200" height="200"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth1synthproec3.png" alt="c" width="200" height="200"/>
 
-<h3 align="left">Examples</h3>
+<h3 align="left">Example (real)</h3>
 
 Straight lines that approximate the point sets.
 
@@ -70,7 +72,7 @@ Obtaining the point minimally distant from the three given lines.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/122.jpg" alt="c" width="400" height="400"/>
 
-<h3 align="left">Examples</h3>
+<h3 align="left">Example (synthetic)</h3>
 
 Average points in each layer and the initial sets.
 
@@ -79,6 +81,8 @@ Average points in each layer and the initial sets.
 Found segment and initial sets of synthetic data.
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/meth2synth.png" alt="c" width="500" height="400"/>
+
+<h3 align="left">Example (real)</h3>
 
 Found segments, spatial solid and original projection contours.
 
