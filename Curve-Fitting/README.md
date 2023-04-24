@@ -68,12 +68,16 @@ $$\begin{gathered}
 \end{gathered}$$
 
 Необходимо найти $\boldsymbol{p}$, который оптимально удовлетворяет всем точкам согласно методу наименьших квадратов. Так точки являются неточными измерениями, то не существует такого $\boldsymbol{p}$, который зануляет $\boldsymbol{C}$, т.е. всегда будет оставаться вектор ошибок $\boldsymbol{\tilde{e}} = (\tilde{e}_1, \tilde{e}_2, \dots, \tilde{e}_n)^T$. Таким образом, реальная задача состоит в минимизации вектора ошибок $\boldsymbol{\tilde{e}}$ с помощью правильного выбора $\boldsymbol{p}$. Для этого линейная регрессия находит вектор $\boldsymbol{p}$, минимизируя функцию полезности:
+
 $$\boldsymbol{G}(\boldsymbol{p}) = \boldsymbol{C}^T \boldsymbol{C} = \boldsymbol{\tilde{e}}^T \boldsymbol{\tilde{e}} = (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})$$
+
 Приравнивая производную функцию полезности к нулю, получаем:
+
 $$\begin{gathered}
 	\frac{\partial}{\partial \boldsymbol{p}} \boldsymbol{G}(\boldsymbol{p}) = 0 \; \Rightarrow \; \frac{\partial}{\partial \boldsymbol{p}} (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \; \Rightarrow \\
 	\Rightarrow \; 2 \boldsymbol{\Phi}^T (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \; \Rightarrow \; \boldsymbol{p} = (\boldsymbol{\Phi}^T \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^T \boldsymbol{y}
 \end{gathered}$$
+
 Таким образом, получаем $\boldsymbol{p}$ - решение, доставляющее минимальную $L_2$-ошибку по отношению к алгебраической дистанции.
 
 
