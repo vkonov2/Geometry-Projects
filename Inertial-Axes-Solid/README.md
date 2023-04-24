@@ -80,9 +80,8 @@ $$J = \begin{vmatrix}
 равном $\displaystyle \frac{K}{\sqrt{J_u}}$ от точки $O_G$, где $K$ - некоторый размерный коэффициент. Тогда получаем, что:
 $$x = \frac{K}{\sqrt{J_u}} \cos{\alpha}, y = \frac{K}{\sqrt{J_u}} \cos{\beta}, z = \frac{K}{\sqrt{J_u}} \cos{\gamma} (7)$$
 Выразим косинусы:
-$$\cos{\alpha} = x \frac{\sqrt{J_u}}{K},
-\cos{\beta} = y \frac{\sqrt{J_u}}{K}, 
-\cos{\gamma} = z \frac{\sqrt{J_u}}{K}$$
+
+$$\cos{\alpha} = x \frac{\sqrt{J_u}}{K}, \cos{\beta} = y \frac{\sqrt{J_u}}{K}, \cos{\gamma} = z \frac{\sqrt{J_u}}{K}$$
 
 Подставляя полученные значения $(7)$ в $(5)$, получаем следующее:
 $$J_u = J_x \left(x \frac{\sqrt{J_u}}{K}\right)^2 + J_y \left(y \frac{\sqrt{J_u}}{K}\right)^2 + J_z \left(z \frac{\sqrt{J_u}}{K}\right)^2 − 2 J_{xy} \left(x \frac{\sqrt{J_u}}{K}\right)\left(y \frac{\sqrt{J_u}}{K}\right) − 2 J_{xz}\left (x \frac{\sqrt{J_u}}{K}\right)\left(z \frac{\sqrt{J_u}}{K}\right) − 2 J_{yz} \left(y \frac{\sqrt{J_u}}{K}\right)\left(z \frac{\sqrt{J_u}}{K}\right)$$
