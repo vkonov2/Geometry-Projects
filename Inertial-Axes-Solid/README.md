@@ -170,7 +170,7 @@ $$\begin{cases}
 
 Сложим все три уравнения, получим:
 
-$$\underset{i=1}{\overset{3}{\sum}}\frac{\partial J_u}{\partial \chi_i} \chi_i - \lambda = 0, \; \begin{cases}
+$$\underset{i=1}{\overset{3}{\sum}}\frac{\partial J_u}{\partial \chi_i} \chi_i - \lambda = 0,  \begin{cases}
 	\chi_1 = \cos{\alpha} \\
 	\chi_2 = \cos{\beta} \\
 	\chi_3 = \cos{\gamma}
