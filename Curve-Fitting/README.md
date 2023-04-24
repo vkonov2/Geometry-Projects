@@ -80,4 +80,14 @@ $$\begin{gathered}
 
 Таким образом, получаем $\boldsymbol{p}$ - решение, доставляющее минимальную $L_2$-ошибку по отношению к алгебраической дистанции.
 
-<!-- <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/b1.png" alt="c" width="150" height="150"/> -->
+Точки лежат на исходном эллипсе:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeLSA.png" alt="c" width="250" height="250"/>
+
+Точки разбросаны равномерно:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterUniformLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfUniformLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeUniformLSA.png" alt="c" width="250" height="250"/>
+
+Точки разбросаны нормально:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterNormLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfNormLSA.png" alt="c" width="250" height="250"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeNormLSA.png" alt="c" width="250" height="250"/>
