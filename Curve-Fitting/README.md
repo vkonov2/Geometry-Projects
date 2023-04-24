@@ -64,7 +64,7 @@ $$\begin{cases}
 $$\begin{gathered}
 	\boldsymbol{C} = \boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y} \\
 	\text{где } \boldsymbol{C} = \left( C_1(x_1, y_1), C_2(x_2, y_2), \dots, C_n(x_n, y_n) \right)^T, \\
-	\boldsymbol{\Phi} = (\phi_1^T, \phi_2^T, \dots, \phi_n^T)^T, \; \boldsymbol{y} = (z_1, z_2, \dots, z_n)^T
+	\boldsymbol{\Phi} = (\phi_1^T, \phi_2^T, \dots, \phi_n^T)^T, \boldsymbol{y} = (z_1, z_2, \dots, z_n)^T
 \end{gathered}$$
 
 Необходимо найти $\boldsymbol{p}$, который оптимально удовлетворяет всем точкам согласно методу наименьших квадратов. Так точки являются неточными измерениями, то не существует такого $\boldsymbol{p}$, который зануляет $\boldsymbol{C}$, т.е. всегда будет оставаться вектор ошибок $\boldsymbol{\tilde{e}} = (\tilde{e}_1, \tilde{e}_2, \dots, \tilde{e}_n)^T$. Таким образом, реальная задача состоит в минимизации вектора ошибок $\boldsymbol{\tilde{e}}$ с помощью правильного выбора $\boldsymbol{p}$. Для этого линейная регрессия находит вектор $\boldsymbol{p}$, минимизируя функцию полезности:
@@ -74,10 +74,10 @@ $$\boldsymbol{G}(\boldsymbol{p}) = \boldsymbol{C}^T \boldsymbol{C} = \boldsymbol
 Приравнивая производную функцию полезности к нулю, получаем:
 
 $$\begin{gathered}
-	\frac{\partial}{\partial \boldsymbol{p}} \boldsymbol{G}(\boldsymbol{p}) = 0 \; \Rightarrow \; \frac{\partial}{\partial \boldsymbol{p}} (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \; \Rightarrow \\
-	\Rightarrow \; 2 \boldsymbol{\Phi}^T (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \; \Rightarrow \; \boldsymbol{p} = (\boldsymbol{\Phi}^T \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^T \boldsymbol{y}
+	\frac{\partial}{\partial \boldsymbol{p}} \boldsymbol{G}(\boldsymbol{p}) = 0 \Rightarrow \frac{\partial}{\partial \boldsymbol{p}} (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \Rightarrow \\
+	\Rightarrow 2 \boldsymbol{\Phi}^T (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 0 \Rightarrow \boldsymbol{p} = (\boldsymbol{\Phi}^T \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^T \boldsymbol{y}
 \end{gathered}$$
 
 Таким образом, получаем $\boldsymbol{p}$ - решение, доставляющее минимальную $L_2$-ошибку по отношению к алгебраической дистанции.
 
-
+<!-- <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/630232146f9498147a11eb3fc29c8c9fd458934a/Segment-Reconstruction/images/b1.png" alt="c" width="150" height="150"/> -->
