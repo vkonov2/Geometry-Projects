@@ -19,4 +19,22 @@ $$C(x,y) = \boldsymbol{a} x^2 + 2\boldsymbol{b} xy + \boldsymbol{c}y^2 + 2 \bold
 - ограничение $\boldsymbol{a}^2 + \boldsymbol{b}^2 + \boldsymbol{c}^2 + \boldsymbol{d}^2 + \boldsymbol{e}^2 + \boldsymbol{f}^2 = 1$
 - ограничение $f = 1$
 
+Также имеем полезную форму записи уравнения эллипса в параметрическом виде:
 
+$$\begin{cases}
+	x(t) = x_c + a \cos{t} \cos{\alpha} - b \sin{t} \sin{\alpha} \\
+	y(t) = y_c + a \cos{t} \sin{\alpha} + b \sin{t} \cos{\alpha}
+\end{cases}$$
+
+где параметр $t \in [0, 2\pi]$, $(x_c, y_c)$ - центр эллипса, $a$ и $b$ - большая и малая полуоси эллипса, $\alpha$ - угол между осью $OX$ и полуосью $a$.
+
+Более того, эллипс может быть представлен без поворота и с центром в начале координат. Соответствующую систему координат будем обозначать $XY$, чтобы отличить ее от основной системы координат $xy$. Переход от системы $xy$ к системе $XY$ осуществляется с помощью матрицы поворота:
+
+$$\boldsymbol{R} = \begin{pmatrix}
+	\cos{\alpha} & \sin{\alpha} \\
+	-\sin{\alpha} & \cos{\alpha}
+\end{pmatrix}$$
+
+Пусть $\boldsymbol{x} = (x, y)^T$ - точка в системе $xy$, $\boldsymbol{X} = (X,Y)^T$ - точка в системе $XY$. Тогда точка $\boldsymbol{X}$ будет выражаться через $\boldsymbol{x}$ и обратно следующим образом:
+
+$$\boldsymbol{X} = \boldsymbol{R} (\boldsymbol{x} - \boldsymbol{x}_c), \; \boldsymbol{x} = \boldsymbol{R}^{-1} \boldsymbol{X} + \boldsymbol{x}_c$$
