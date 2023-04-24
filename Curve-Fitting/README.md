@@ -80,10 +80,6 @@ $$\begin{gathered}
 
 Таким образом, получаем $\boldsymbol{p}$ - решение, доставляющее минимальную $L_2$-ошибку по отношению к алгебраической дистанции.
 
-Точки лежат на исходном эллипсе:
-
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeLSA.png" alt="c" width="300" height="300"/>
-
 Точки разбросаны равномерно:
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterUniformLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfUniformLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeUniformLSA.png" alt="c" width="300" height="300"/>
@@ -208,10 +204,6 @@ $$\begin{pmatrix}
 	\boldsymbol{d}_n
 \end{pmatrix}$$
 
-Точки лежат на исходном эллипсе:
-
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeLSO.png" alt="c" width="300" height="300"/>
-
 Точки разбросаны равномерно:
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterUniformLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfUniformLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeUniformLSO.png" alt="c" width="300" height="300"/>
@@ -220,3 +212,52 @@ $$\begin{pmatrix}
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterNormLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfNormLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeNormLSO.png" alt="c" width="300" height="300"/>
 
+<h2 align="left">WLSA-алгоритм</h2>
+
+Ранее были описаны два метода аппроксимации множества точек эллипсом: LSA и LSO. Метод LSA, как будет показано позже, не всегда дает удовлетворительные результаты. LSO же справляется много лучше, однако, высокая точность достигается засчет значительно более высоких вычислительных затрат.
+ 
+В этом разделе будет представлен метод взвешенных наименьших квадратов (WLSA), который намного быстрее, чем метод LSO и более точен, чем метод LSA.
+
+Введем функцию полезности, которую будем минимизировать:
+
+$$\begin{gathered}
+	\boldsymbol{G}(p) = \sum C'_i(x_i, y_i) = \sum \dfrac{C^2_i(x_i, y_i)}{\| \nabla C_i(x_i, y_i) \|^2} = (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T \boldsymbol{W}^{-1}(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})
+\end{gathered}$$
+
+Здесь нормализация достигается засчет матрицы весов $W:$
+
+$$\begin{gathered}
+	\boldsymbol{W} = daig(\| \nabla C_1 \|^2, \ldots, \| \nabla C_n \|^2), \| \nabla C_i(x_i, y_i)\|^2 = (\dfrac{\partial C_i}{\partial x_i})^2 + (\dfrac{\partial C_i}{\partial y_i})^2, \\
+	\dfrac{\partial C_i}{\partial x_i} = 2 \boldsymbol{a} x_i + 2 \boldsymbol{b} y_i + 2 \boldsymbol{d}, \\
+	\dfrac{\partial C_i}{\partial y_i} = -2 \boldsymbol{a} y_i + 2 \boldsymbol{b} x_i + 2 \boldsymbol{e} + 2 \boldsymbol{y}\\
+\end{gathered}$$
+
+Приравнивая производную функцию полезности к нулю, получаем:
+
+$$\begin{gathered}
+	\dfrac{\partial}{\partial \boldsymbol{p}} \boldsymbol{G}(\boldsymbol{p}) = \dfrac{\partial}{\partial \boldsymbol{p}}(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T \boldsymbol{W}^{-1}(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = 2 \boldsymbol{\Phi}^T \boldsymbol{W}^{-1} (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y}) = \\
+	= (\boldsymbol{\Phi}^T \boldsymbol{W}^{-1} \boldsymbol{\Phi})^{-1}\boldsymbol{\Phi}^T \boldsymbol{W}^{-1} \boldsymbol{y}
+\end{gathered}$$
+
+Далее необходимо произвести следущую итеративную процедуру:
+
+- Вычислить начальное приближение $\boldsymbol{p}^{(0)} = \boldsymbol{p}^{(k = 0)}$ (например, в качестве $\boldsymbol{p}^{(0)}$ принять ответ, вычисленный методом LSA), задать $\boldsymbol{\varepsilon}$ для условия остановки метода;
+- Вычислить матрицу весов $W = W(\boldsymbol{p}^{(k)})$;
+- Вычислить следующее приближение $\boldsymbol{p}:$
+
+	$$\begin{gathered}
+		\boldsymbol{p}^{(k+1)} = (\boldsymbol{\Phi}^T(\boldsymbol{p}^{(k)}) \cdot \boldsymbol{W}^{-1}(\boldsymbol{p}^{(k)}) \cdot \boldsymbol{\Phi}^{-1}(\boldsymbol{p}^{(k)})) \cdot \boldsymbol{\Phi}^T(\boldsymbol{p}^{(k)}) \cdot \boldsymbol{W}^{-1}(\boldsymbol{p}^{(k)}) \cdot \boldsymbol{y}
+	\end{gathered}$$
+
+- если:
+	- $\| \boldsymbol{p}^{(k)} - \boldsymbol{p}^{(k+1)}\|_{L_2} \leq \boldsymbol{\varepsilon} \Rightarrow \boldsymbol{p} = \boldsymbol{p}^{(k)}$
+
+	- $\| \boldsymbol{p}^{(k)} - \boldsymbol{p}^{(k+1)}\|_{L_2} > \boldsymbol{\varepsilon} \Rightarrow$ продолжить процедуру с шага 2.
+
+Точки разбросаны равномерно:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseQuarterUniformWLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseHalfUniformWLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseWholeUniformWLSA.png" alt="c" width="300" height="300"/>
+
+Точки разбросаны нормально:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseQuarterNormWLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseHalfNormWLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/WLSA/EllipseWholeNormWLSA.png" alt="c" width="300" height="300"/>
