@@ -4,7 +4,7 @@
 
 Найти, есть ли для множества точек, задающих многогранник, прямые в пространстве (оси), обладающие некоторыми характерными свойствами, которые могут быть полезны для совмещения похожих по конфигурации многогранников, а если такие оси есть, то описать алгоритм их нахождения.
 
-<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/4fde689a243a9103e9532d41f1d350239a607b2a/Inertial-Axes-Solid/images/im1.jpg" alt="c" width="500" height="500"/>
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/4fde689a243a9103e9532d41f1d350239a607b2a/Inertial-Axes-Solid/images/im1.jpg" alt="c" width="500" height="500"/> <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/4fde689a243a9103e9532d41f1d350239a607b2a/Inertial-Axes-Solid/images/axes_success.png" alt="c" width="500" height="500"/>
 
 <h2 align="left">Немного физики, необходимой для понимания</h2>
 
