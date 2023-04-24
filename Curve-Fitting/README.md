@@ -172,20 +172,22 @@ $$\boldsymbol{J}_{\boldsymbol{x} = \boldsymbol{x}'_i} = \boldsymbol{R}^{-1} \bol
 
 $$\begin{gathered}
 	\boldsymbol{B} = \boldsymbol{B}_1 \boldsymbol{B}_2 \boldsymbol{B}_3 \boldsymbol{B}_4 \\
-	\boldsymbol{B}_1 = \begin{pmatrix}
-		b^2 x \cos{\alpha} - a^2 y \sin{\alpha} \\
-		b^2 (y_i-y) \cos{\alpha} - a^2 (x_i-x) \sin{\alpha}
-	\end{pmatrix}\\
-	\boldsymbol{B}_2 = \begin{pmatrix}
-		b^2 x \sin{\alpha} + a^2 y \cos{\alpha} \\
-		b^2 (y_i-y) \sin{\alpha} - a^2 (x_i-x) \cos{\alpha}
-	\end{pmatrix} \\
-	\boldsymbol{B}_3 = \begin{pmatrix}
-		a (b^2 - y^2) \\ 2ay(x_i - x)
-	\end{pmatrix}\\
-	\boldsymbol{B}_4 = \begin{pmatrix}
-		b(a^2-x^2) \\ -2bx(y_i-y)
-	\end{pmatrix}
+	\begin{cases}
+		\boldsymbol{B}_1 = \begin{pmatrix}
+			b^2 x \cos{\alpha} - a^2 y \sin{\alpha} \\
+			b^2 (y_i-y) \cos{\alpha} - a^2 (x_i-x) \sin{\alpha}
+		\end{pmatrix}\\
+		\boldsymbol{B}_2 = \begin{pmatrix}
+			b^2 x \sin{\alpha} + a^2 y \cos{\alpha} \\
+			b^2 (y_i-y) \sin{\alpha} - a^2 (x_i-x) \cos{\alpha}
+		\end{pmatrix} \\
+		\boldsymbol{B}_3 = \begin{pmatrix}
+			a (b^2 - y^2) \\ 2ay(x_i - x)
+		\end{pmatrix}\\
+		\boldsymbol{B}_4 = \begin{pmatrix}
+			b(a^2-x^2) \\ -2bx(y_i-y)
+		\end{pmatrix}
+	\end{cases}
 \end{gathered}$$
 
 Затем итеративно определяется искомый вектор параметров $\boldsymbol{q}$ с шагом $\lambda$:
