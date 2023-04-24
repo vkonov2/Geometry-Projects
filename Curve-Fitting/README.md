@@ -91,3 +91,130 @@ $$\begin{gathered}
 Точки разбросаны нормально:
 
 <img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseQuarterNormLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseHalfNormLSA.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSA/EllipseWholeNormLSA.png" alt="c" width="300" height="300"/>
+
+<h2 align="left">LSO-алгоритм</h2>
+
+<h3>Идея</h3>
+
+В LSA-алгоритме минимизировалось алгебраическое расстояние $C(x, y)$. Это привело к компактному и простому в вычислении решению $\boldsymbol{p}$. Однако решение методом наименьших квадратов, основанное на алгебраическом расстоянии, не совсем верно. Ошибка, допущенная в этом методе, называется high/low curvative bias. Говоря простыми словами, смещение возникает из-за заданной формы эллипса. Таким образом, измерение вдоль большой полуоси $a$ имеет большое значение для $C(x,y)$, тогда как измерение вдоль малой полуоси $b$ имеет меньшее значение. Однако оба измерения могут быть одинаково близки к эллипсу, хотя их расстояние $C(x,y)$ различно. Чтобы избежать этого смещения, необходимо использовать ортогональное расстояние между измерением $(x_i, y_i)$ и эллипсом.
+
+Ортогональное расстояние $d$ — это кратчайшее соединение между точкой $(x_i, y_i)$ и эллипсом. Вектор параметров $\boldsymbol{p}$ можно получить путем минимизации суммы квадратов расстояний:
+
+$$\boldsymbol{G}(\boldsymbol{p}) = \underset{i=1}{\overset{n}{\sum}}d_i^2$$
+
+Для двумерного случая нахождение расстояния d является задачей решения полинома 4-й степени и может быть решено аналитически. Однако аналитическое решение неустойчиво при измерениях $|x_i| \approx 0$ или $|y_i| \approx 0$, поэтому будем использовать решение задачи нахождения расстояния, использующее алгоритм Гаусса-Ньютона. Как только ортогональное расстояние $d_i$ для каждой точки $i$ найдено, функция полезности $\boldsymbol{G}$ должна быть минимизирована, чтобы найти вектор параметров $\boldsymbol{p}$ с наименьшей ошибкой. Для этой цели подходят итерационные алгоритмы (Гаусс-Ньютон, градиентный спуск и другие). Мы будем использовать подход Гаусса-Ньютона.
+
+<h3>Нахождение ортогональной точки на эллипсе</h3>
+
+Чтобы получить ортогональное расстояние $d$, вычисляется соответствующая ортогональная точка $(x_{\perp}, y_{\perp})$ на эллипсе. Расчет упрощается, если это делать в системе координат $XY$, т.е. в системе координат, в которой эллипс не повернут и симметричен относительно каждой оси координат. Эллиптическое уравнение для этого случая имеет вид:
+
+$$\frac{X^2}{a^2} + \frac{Y^2}{b^2} = 1$$
+
+Иначе это уравнение можно записать в следующем виде:
+
+$$f_1(X,Y) = \frac{1}{2}(a^2Y^2 +b^2X^2 −a^2b^2)=0$$
+
+Для условия, что касательная ортогональной точки $(X_{\perp}, Y_{\perp})$ ортогональна измерению $(X_i, Y_i)$:
+
+$$\frac{dy}{dx} \cdot \frac{Y_i - Y_{\perp}}{X_i - X_{\perp}} = \frac{-b^2 X_{\perp}}{a^2 Y_{\perp}} \cdot \frac{Y_i - Y_{\perp}}{X_i - X_{\perp}} = -1$$
+
+Отсюда получаем второе уравнение:
+
+$$f_2(X,Y) = b^2X(Y_i −Y)−a^2Y(X_i −X)=0$$
+
+Имеем систему уравнений, которую можно решить в векторной форме:
+
+$$\boldsymbol{f}(X,Y) = \begin{pmatrix}
+	f_1(X,Y) \\ f_2(X,Y)
+\end{pmatrix}$$
+
+Это возможно аналитически, но, как было упомянуто, такое решение численно неустойчиво. Поэтому в дальнейшем к системе уравнений будет применяться метод Гаусса-Ньютона. Для этого вычисляется матрица Якоби:
+
+$$\boldsymbol{Q} = \begin{pmatrix}
+	\frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\
+	\frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y} 
+\end{pmatrix} = \begin{pmatrix}
+		b^2 x & a^2 y \\
+		(a^2 - b^2)y + b^2 y_i & (a^2 - b^2) x - a^2 x_i
+\end{pmatrix}$$
+
+Начальное приближение $\boldsymbol{X}_0$ предлагается вычислять через усреднение некоторых точек $\boldsymbol{X}_{k_1}$ и $\boldsymbol{X}_{k_2}$:
+
+$$\begin{gathered}
+	\boldsymbol{X}_0 = \frac{1}{2} (\boldsymbol{X}_{k_1} + \boldsymbol{X}_{k_2}) \\
+	\boldsymbol{X}_{k_1} = \frac{ab}{\sqrt{b^2 X_i^2 + a^2 Y_i^2}} \begin{pmatrix}
+		X_i \\ Y_i
+	\end{pmatrix}, \boldsymbol{X}_{k_2} = \begin{cases}
+		\begin{pmatrix}
+			X_i \\ sgn(Y_i) \frac{b}{a} \sqrt{a^2 - X_i^2}
+		\end{pmatrix}, \text{если } |X_i| < a \\
+		\begin{pmatrix}
+			sgn(X_i)a \\ 0
+		\end{pmatrix}, \text{если } |X_i| \ge a
+	\end{cases}
+\end{gathered}$$
+
+Ортогональная точка $\boldsymbol{X}' = (X_{\perp}, Y_{\perp})^T$ вычисляется итеративно:
+
+$$\boldsymbol{X}'_{k+1} = \boldsymbol{X}'_k - \boldsymbol{Q}_k^{-1} \boldsymbol{f}(X_k)$$
+
+Наконец, путем обратного преобразования в систему координат $xy$ можно определить искомый вектор ортогонального расстояния:
+
+$$\boldsymbol{d}_i = \boldsymbol{x}_i - \boldsymbol{x}'_i$$
+
+<h3>Нахождение эллипса по ортогональным расстояниям</h3>
+
+Имея ортогональную точку $\boldsymbol{X}'$ теперь можно выполнить алгоритм нахождения эллипса также с помощью алгоритма Гаусса-Ньютона. Для этого определяется вектор $\boldsymbol{q} = (x_c, y_c, a, b, \alpha)^T$, содержащий искомые параметры. Для каждого измерения $\boldsymbol{x}_i$ вычисляется матрица Якоби:
+
+$$\boldsymbol{J}_{\boldsymbol{x} = \boldsymbol{x}'_i} = \boldsymbol{R}^{-1} \boldsymbol{Q}^{-1} \boldsymbol{B}$$
+
+Матрица $B$ вычисляется следующим образом:
+
+$$\begin{gathered}
+	\boldsymbol{B} = \boldsymbol{B}_1 \boldsymbol{B}_2 \boldsymbol{B}_3 \boldsymbol{B}_4 \\
+	\boldsymbol{B}_1 = \begin{pmatrix}
+		b^2 x \cos{\alpha} - a^2 y \sin{\alpha} \\
+		b^2 (y_i-y) \cos{\alpha} - a^2 (x_i-x) \sin{\alpha}
+	\end{pmatrix}\\
+	\boldsymbol{B}_2 = \begin{pmatrix}
+		b^2 x \sin{\alpha} + a^2 y \cos{\alpha} \\
+		b^2 (y_i-y) \sin{\alpha} - a^2 (x_i-x) \cos{\alpha}
+	\end{pmatrix} \\
+	\boldsymbol{B}_3 = \begin{pmatrix}
+		a (b^2 - y^2) \\ 2ay(x_i - x)
+	\end{pmatrix}\\
+	\boldsymbol{B}_4 = \begin{pmatrix}
+		b(a^2-x^2) \\ -2bx(y_i-y)
+	\end{pmatrix}
+\end{gathered}$$
+
+Затем итеративно определяется искомый вектор параметров $\boldsymbol{q}$ с шагом $\lambda$:
+
+$$\boldsymbol{q}_{k+1} = \boldsymbol{q}_k + \lambda \Delta \boldsymbol{q}$$
+
+Получаем систему:
+
+$$\begin{pmatrix}
+	\boldsymbol{J}_{\boldsymbol{x} = \boldsymbol{x}'_1}\\
+	\boldsymbol{J}_{\boldsymbol{x} = \boldsymbol{x}'_2} \\
+	\vdots \\
+	\boldsymbol{J}_{\boldsymbol{x} = \boldsymbol{x}'_n}
+\end{pmatrix} \Delta \boldsymbol{q} = \begin{pmatrix}
+	\boldsymbol{d}_1 \\
+	\boldsymbol{d}_2 \\
+	\vdots \\
+	\boldsymbol{d}_n
+\end{pmatrix}$$
+
+Точки лежат на исходном эллипсе:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeLSO.png" alt="c" width="300" height="300"/>
+
+Точки разбросаны равномерно:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterUniformLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfUniformLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeUniformLSO.png" alt="c" width="300" height="300"/>
+
+Точки разбросаны нормально:
+
+<img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseQuarterNormLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseHalfNormLSO.png" alt="c" width="300" height="300"/><img align="center" src="https://github.com/vkonov2/Geometry-Projects/blob/cde9f260ff239605cf492b27bc155f97d2716f05/Curve-Fitting/images/contour/ellipse/LSO/EllipseWholeNormLSO.png" alt="c" width="300" height="300"/>
+
