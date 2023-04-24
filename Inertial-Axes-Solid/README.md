@@ -51,7 +51,11 @@ $$J_{xy} = \underset{i}{\overset{}{\sum}}m_{\Gamma_i} x_{\Gamma_i} y_{\Gamma_i},
 Используя векторно-матричную символику для момента инерции, получим:
 $J_u = (\cos{\alpha}, \cos{\beta}, \cos{\gamma})^T$, где $\overline{e}(\cos{\alpha},\cos{\beta},\cos{\gamma})$ - орт оси $u$, заданный в указанной системе координат своими направляющими косинусами, а симметрическая матрица:
 
-$$J = \begin{vmatrix} J_x & -J_{xy} & -J_{xz} \\ -J_{xy} & J_y & -J_{yz} \\ -J_{xz} & -J_{yz} & J_z \end{vmatrix}$$
+$$J = \begin{vmatrix} 
+	J_x & -J_{xy} & -J_{xz} \\
+	-J_{xy} & J_y & -J_{yz} \\
+	-J_{xz} & -J_{yz} & J_z
+	\end{vmatrix}$$
 
 определяет **тензор инерции** тела (тензор второго ранга). 
 
