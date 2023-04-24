@@ -44,10 +44,12 @@ $$\boldsymbol{X} = \boldsymbol{R} (\boldsymbol{x} - \boldsymbol{x}_c), \boldsymb
 Выберем нормировку коэффициентов в виде $a+c = 1$, тогда уравнение эллипса будет иметь вид:
 $$C(x,y) = \boldsymbol{a}(x^2 - y^2) + 2 \boldsymbol{b}x y + 2 \boldsymbol{d} x + 2 \boldsymbol{e} y + y^2 + \boldsymbol{f}$$
 В векторной форме имеем:
+
 $$\begin{gathered}
 	C(x,y) = \phi \boldsymbol{p} - z \\
-	\text{где } \phi = (x^2, y^2, 2xy, 2x, 2y, 1), \; \boldsymbol{p} = (\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{d}, \boldsymbol{e}, \boldsymbol{f})^T, \; z = -y^2 
+	\phi = (x^2, y^2, 2xy, 2x, 2y, 1),  \boldsymbol{p} = (\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{d}, \boldsymbol{e}, \boldsymbol{f})^T,  z = -y^2 
 \end{gathered}$$
+
 Имея $n$ точек $\{(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)\}$, получаем систему уравнений:
 $$\begin{cases}
 	C_1 (x_1, y_1) = \phi_1 \boldsymbol{p} - z_1 \\
