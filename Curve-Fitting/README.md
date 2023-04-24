@@ -51,18 +51,22 @@ $$\begin{gathered}
 \end{gathered}$$
 
 Имея $n$ точек $\{(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)\}$, получаем систему уравнений:
+
 $$\begin{cases}
 	C_1 (x_1, y_1) = \phi_1 \boldsymbol{p} - z_1 \\
 	C_2 (x_2, y_2) = \phi_2 \boldsymbol{p} - z_2 \\
 	\vdots \dots \dots \vdots \\
 	C_n (x_n, y_n) = \phi_n \boldsymbol{p} - z_n
 \end{cases}$$
+
 В векторной форме имеем:
+
 $$\begin{gathered}
 	\boldsymbol{C} = \boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y} \\
 	\text{где } \boldsymbol{C} = \left( C_1(x_1, y_1), C_2(x_2, y_2), \dots, C_n(x_n, y_n) \right)^T, \\
 	\boldsymbol{\Phi} = (\phi_1^T, \phi_2^T, \dots, \phi_n^T)^T, \; \boldsymbol{y} = (z_1, z_2, \dots, z_n)^T
 \end{gathered}$$
+
 Необходимо найти $\boldsymbol{p}$, который оптимально удовлетворяет всем точкам согласно методу наименьших квадратов. Так точки являются неточными измерениями, то не существует такого $\boldsymbol{p}$, который зануляет $\boldsymbol{C}$, т.е. всегда будет оставаться вектор ошибок $\boldsymbol{\tilde{e}} = (\tilde{e}_1, \tilde{e}_2, \dots, \tilde{e}_n)^T$. Таким образом, реальная задача состоит в минимизации вектора ошибок $\boldsymbol{\tilde{e}}$ с помощью правильного выбора $\boldsymbol{p}$. Для этого линейная регрессия находит вектор $\boldsymbol{p}$, минимизируя функцию полезности:
 $$\boldsymbol{G}(\boldsymbol{p}) = \boldsymbol{C}^T \boldsymbol{C} = \boldsymbol{\tilde{e}}^T \boldsymbol{\tilde{e}} = (\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})^T(\boldsymbol{\Phi} \boldsymbol{p} - \boldsymbol{y})$$
 Приравнивая производную функцию полезности к нулю, получаем:
