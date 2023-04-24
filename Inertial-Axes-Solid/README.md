@@ -125,6 +125,7 @@ $$\begin{cases}
 \end{cases}$$
 
 Распишем систему:
+
 $$\begin{cases}
 	2 J_x \cos{\alpha} - 2 J_{xy} \cos{\beta} - 2 J_{xz} \cos{\gamma} - 2 \lambda \cos{\alpha} = 0 \\
 	2 J_y \cos{\beta} - 2 J_{xy} \cos{\alpha} - 2 J_{yz} \cos{\gamma} - 2 \lambda \cos{\beta} = 0 \\
@@ -132,6 +133,7 @@ $$\begin{cases}
 \end{cases}$$
 
 После сокращений и объединения членов, получаем:
+
 $$\begin{cases}
 	(J_x - \lambda) \cos{\alpha} - J_{xy} \cos{\beta} - J_{xz} \cos{\gamma} = 0 \\
 	- J_{xy} \cos{\alpha} + (J_y - \lambda) \cos{\beta} - J_{yz} \cos{\gamma} = 0 \\
@@ -139,6 +141,7 @@ $$\begin{cases}
 \end{cases}(12)$$
 
 Таким образом, имеем однородную систему уравнений на косинусы:
+
 $$\begin{pmatrix} 
 	J_x - \lambda & -J_{xy} & -J_{xz} \\
 	-J_{xy} & J_y - \lambda & -J_{yz} \\
