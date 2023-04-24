@@ -227,7 +227,7 @@ $$\begin{gathered}
 Здесь нормализация достигается засчет матрицы весов $W:$
 
 $$\begin{gathered}
-	\boldsymbol{W} = daig(\| \nabla C_1 \|^2, \ldots, \| \nabla C_n \|^2), \| \nabla C_i(x_i, y_i)\|^2 = (\dfrac{\partial C_i}{\partial x_i})^2 + (\dfrac{\partial C_i}{\partial y_i})^2, \\
+	\boldsymbol{W} = diag(\| \nabla C_1 \|^2, \ldots, \| \nabla C_n \|^2), \| \nabla C_i(x_i, y_i)\|^2 = (\dfrac{\partial C_i}{\partial x_i})^2 + (\dfrac{\partial C_i}{\partial y_i})^2, \\
 	\dfrac{\partial C_i}{\partial x_i} = 2 \boldsymbol{a} x_i + 2 \boldsymbol{b} y_i + 2 \boldsymbol{d}, \\
 	\dfrac{\partial C_i}{\partial y_i} = -2 \boldsymbol{a} y_i + 2 \boldsymbol{b} x_i + 2 \boldsymbol{e} + 2 \boldsymbol{y}\\
 \end{gathered}$$
